@@ -2,11 +2,12 @@ import Image from "next/image";
 import React from "react";
 import house from "../assets/Vectorhouse.png";
 import tickIcon from "../assets/FAB _ RegularTick.png";
-import hutIcon from "../assets/FAB _ Regularhut.png";
+import left from "../assets/leftarrow.png";
 import tableIcon from "../assets/FAB _ Regulartable.png";
 import msgIcon from "../assets/FAB _ Regularmsg.png";
 import empty from "../assets/profile.png";
 import tick from "../assets/greentick.png";
+import Link from "next/link";
 
 export default function RegisterScreen3() {
   return (
@@ -47,9 +48,14 @@ export default function RegisterScreen3() {
           </div>
         </div>
       </div>
-      <div className="container mt-10 border mx-auto">
-        <div className="flex items-center justify-center flex-col md:flex-row border border-red-500">
-          <div className="columns-3 border">11</div>
+      <div className="container mt-10 mx-auto">
+        <div className="flex items-center justify-center flex-col md:flex-row ">
+          <div className="columns-3 flex justify-center ">
+            <Link href="/RegisterScreen2">
+            <Image src={left} alt='/' className="w-[3rem] h-[3rem]  cursor-pointer mx-5" />
+            </Link>
+  
+          </div>
           <div className="border shadow-md flex justify-center flex-col lg:flex-row items-center bg-[#369EA4]">
             <div className="w-auto bg-[#fff] pt-10 pb-10">
               <div className="flex flex-col sm:flex-row items-center">
@@ -103,7 +109,7 @@ export default function RegisterScreen3() {
             </div>
             <div className="p-5">
               <div className="bg-[#fff] p-5 rounded-md">
-                <select className="bg-custom-grey rounded-full pl-6 mt-5 py-4 w-[280px] mx-auto text-custom text-md">
+                <select className="bg-custom-grey rounded-full pl-6 mt-5 py-4 w-[280px] mx-auto text-custom text-md focus-visible:outline-[#A1D2D5]">
                   <option>ID Type</option>
                   <option>Option 1</option>
                   <option>Option 2</option>
@@ -194,14 +200,19 @@ export default function RegisterScreen3() {
                       </div>
                     </div>
                   </div>
-                  <button class="bg-custom-green rounded-sm  text-white center flex justify-center m-auto text-md py-3 px-7 mt-8 mb-4">
+                  <button className="bg-custom-green rounded-sm hover:font-bold hover:bg-gradient-radial from-[#ffffff49] to-[#339FA4] text-white center flex justify-center m-auto text-md py-3 px-7 mt-8 mb-4">
                 Save
               </button>
                 </div>
               </div>
             </div>
           </div>
-          <div className="columns-3 border">11</div>
+          <div className="columns-3  flex ">
+            <Link href="RegisterScreen4">
+
+          <Image src={left} alt='/' className="w-[3rem] h-[3rem] rotate-180 cursor-pointer mx-5" />
+            </Link>
+          </div>
         </div>
       </div>
     </div>

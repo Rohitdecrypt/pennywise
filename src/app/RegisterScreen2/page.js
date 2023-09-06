@@ -56,11 +56,11 @@ export default function RegisterScreen2() {
         </div>
         <div className="w-10/12">
           <div className="bg-white shadow-md rounded px-8 pt-8 pb-10 mt-5">
-            <div class="flex justify-center align-middle m-auto sm:flex-row flex-col">
-              <button class="bg-custom-green  text-white text-2xl py-3 px-12 sm:mb-0 mb-4">
+            <div className="flex justify-center align-middle m-auto sm:flex-row flex-col">
+              <button className="bg-custom-green  text-white text-2xl py-3 px-12 sm:mb-0 mb-4">
                 National
               </button>
-              <button class="bg-custom-grey  text-custom-greenlight text-2xl py-3 px-12">
+              <button className="bg-custom-grey  text-custom-greenlight text-2xl py-3 px-12">
                 International
               </button>
             </div>
@@ -143,7 +143,7 @@ export default function RegisterScreen2() {
                   placeholder="Postcode"
                 />
               </div>
-              <button class="bg-custom-green rounded-sm  text-white center flex justify-center m-auto text-xl py-3 px-7 mt-20">
+              <button className="bg-custom-green rounded-sm hover:font-bold hover:bg-gradient-radial from-[#ffffff49] to-[#339FA4] text-white center flex justify-center m-auto text-xl py-3 px-7 mt-20">
                 Save
               </button>
               </div>
