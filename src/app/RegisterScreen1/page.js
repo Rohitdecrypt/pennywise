@@ -1,4 +1,5 @@
-import React from "react";
+"use client"
+import React, { useRef, useState } from "react";
 import regbg from "../assets/Ellipse.png";
 import Image from "next/image";
 import dp from "../assets/profile.png";
@@ -13,6 +14,54 @@ import msgIcon from "../assets/FAB _ Regularmsg.png";
 import Link from "next/link";
 
 export default function RegisterScreen1() {
+  const [selectedProfileImage, setSelectedProfileImage] = useState(null);
+  const [formData, setFormdata] = useState({
+    firstname: "",
+    lastname: "",
+    email: "",
+    email_newsletter: 0,
+    phone: "",
+    phone_newsletter: 0,
+    day: "",
+    month: "",
+    year: "",
+    notes: "",
+  });
+
+  const profilePicUploader = useRef(null);
+  const getAllowedDocumentFormats = () => {
+    return ["image/jpg", "image/jpeg", "image/png"];
+  };
+
+  const handleProfileUpload = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      if (getAllowedDocumentFormats().includes(file.type)) {
+        const reader = new FileReader();
+        reader.onload = () => {
+          if (reader.result) {
+            console.log("reader.result.toString()",reader.result.toString())
+            setSelectedProfileImage(reader.result.toString());
+            setFormdata({
+              ...formData,
+              image: file,
+            });
+          }
+        };
+        reader.readAsDataURL(file);
+      } else {
+        if (profilePicUploader.current) {
+          profilePicUploader.current.value = "";
+        }
+        console.log("Please upload a valid document");
+      }
+    }
+  };
+  const handleKeyDown = (event) => {
+    if (event.key === "Enter") {
+      event.preventDefault();
+    }
+  };
   return (
     <>
       <div className=" container mt-5 mx-auto">
@@ -64,7 +113,7 @@ export default function RegisterScreen1() {
                 ></div>
                 <div className="h-[30rem] rounded-md bg-white w-[20rem] mx-auto mt-[-10rem] shadow-md shadow-[#A1D2D5] p-2">
                   <div className="rounded-md w-[full] h-[24rem]  relative">
-                    <Image src={dp} alt="dp" className="w-full h-[22rem]" />
+                    <Image src={  selectedProfileImage ? selectedProfileImage : dp } alt="dp"  className="w-full h-[22rem]" height={100} width={100}/>
                     <div className="w-[4rem] h-[4rem] absolute left-[7.56rem] bottom-[.5rem]">
                       <Image
                         src={dpIcon}
@@ -74,10 +123,24 @@ export default function RegisterScreen1() {
                     </div>
                   </div>
                   <div className="h-[2.5rem] w-[2.5rem] rounded-full bg-[#369EA4] mx-auto flex justify-center items-center">
+                  <input
+                          type="file"
+                          id="profile_pic"
+                          className="hidden"
+                          ref={profilePicUploader}
+                          onChange={handleProfileUpload}
+                          onKeyDown={handleKeyDown}
+                        />
                     <Image
                       className="h-[1.5rem] w-[1.8rem] cursor-pointer"
                       alt="/"
                       src={changeIcon}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        if (profilePicUploader.current) {
+                          profilePicUploader.current.click();
+                        }
+                      }}
                     />
                   </div>
                   <p className="text-center mt-2">Change picture</p>
@@ -162,7 +225,7 @@ export default function RegisterScreen1() {
         </form>
         {/* arrow btn */}
     
-        <div className="my-5 sm:my-0">
+        <div className="my-5">
         <Link href='/RegisterScreen2'>
           <Image
             src={nextArr}

@@ -1,4 +1,5 @@
-import React from "react";
+"use client"
+import React, { useRef, useState } from "react";
 import house from "../assets/Vectorhouse.png";
 import tickIcon from "../assets/FAB _ RegularTick.png";
 import msgIcon from "../assets/FAB _ Regularmsg.png";
@@ -8,6 +9,7 @@ import left from "../assets/leftarrow.png";
 import success from "../assets/sucess.png"
 
 export default function page() {
+
   return (
     <div>
       <div className=" container mt-5 mx-auto">
