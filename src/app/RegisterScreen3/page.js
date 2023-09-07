@@ -2,11 +2,12 @@ import Image from "next/image";
 import React from "react";
 import house from "../assets/Vectorhouse.png";
 import tickIcon from "../assets/FAB _ RegularTick.png";
-import hutIcon from "../assets/FAB _ Regularhut.png";
+import left from "../assets/leftarrow.png";
 import tableIcon from "../assets/FAB _ Regulartable.png";
 import msgIcon from "../assets/FAB _ Regularmsg.png";
 import empty from "../assets/profile.png";
 import tick from "../assets/greentick.png";
+import Link from "next/link";
 
 export default function RegisterScreen3() {
   return (
@@ -47,9 +48,14 @@ export default function RegisterScreen3() {
           </div>
         </div>
       </div>
-      <div className="container mt-10 border mx-auto">
-        <div className="flex items-center justify-center flex-col md:flex-row border border-red-500">
-          <div className="columns-3 border">11</div>
+      <div className="container mt-10 mx-auto">
+        <div className="flex items-center justify-center flex-col md:flex-row ">
+          <div className="columns-3 flex justify-center ">
+            <Link href="/RegisterScreen2">
+            <Image src={left} alt='/' className="w-[3rem] h-[3rem]  cursor-pointer mx-5 my-4" />
+            </Link>
+  
+          </div>
           <div className="border shadow-md flex justify-center flex-col lg:flex-row items-center bg-[#369EA4]">
             <div className="w-auto bg-[#fff] pt-10 pb-10">
               <div className="flex flex-col sm:flex-row items-center">
@@ -103,38 +109,49 @@ export default function RegisterScreen3() {
             </div>
             <div className="p-5">
               <div className="bg-[#fff] p-5 rounded-md">
-                <select className="bg-custom-grey rounded-full pl-6 mt-5 py-4 w-[280px] mx-auto text-custom text-md">
-                  <option>ID Type</option>
-                  <option>Option 1</option>
-                  <option>Option 2</option>
-                  <option>Option 3</option>
-                </select>
+              <div className="inline-block relative bg-custom-grey rounded-full mt-10 w-[260px] sm:w-[310px] py-3  focus:border-none focus:outline-none">
+                  <select className="bg-transparent rounded-[50px] py- px-5 w-full  text-custom  focus:border-none focus:outline-none appearance-none">
+                    <option className="pt-1 text-sm ">Id Type</option>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                  </select>
+                  <div className="pointer-events-none absolute inset-y-0 right-1 h-full flex items-center px-4 text-custom">
+                    <svg
+                      className="fill-current h-5 w-6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                  </div>
+                </div>
                 <div className="p-2 shadow-md mt-4">
                   <div>
                     <input
                       type="text"
-                      placeholder="first name"
+                      placeholder="Issued By :"
                       className="bg-[#EEF2F6] py-3 pl-5 placeholder-[#369EA4] rounded-full mx-auto w-full  focus-visible:outline-[#A1D2D5]"
                     />
                   </div>
                   <div className="mt-4">
                     <input
                       type="text"
-                      placeholder="first name"
+                      placeholder="ID Name:"
                       className="bg-[#EEF2F6] py-3 pl-5 placeholder-[#369EA4] rounded-full mx-auto w-full  focus-visible:outline-[#A1D2D5]"
                     />
                   </div>
                   <div className="mt-4">
                     <input
                       type="text"
-                      placeholder="first name"
+                      placeholder="ID Number:"
                       className="bg-[#EEF2F6] py-3 pl-5 placeholder-[#369EA4] rounded-full mx-auto w-full  focus-visible:outline-[#A1D2D5]"
                     />
                   </div>
                   <div className="mt-4">
                     <input
                       type="text"
-                      placeholder="first name"
+                      placeholder="ID Expiry:"
                       className="bg-[#EEF2F6] py-3 pl-5 placeholder-[#369EA4] rounded-full mx-auto w-full  focus-visible:outline-[#A1D2D5]"
                     />
                   </div>
@@ -152,7 +169,7 @@ export default function RegisterScreen3() {
                         />
                       </div>
                       <div className="ml-3">
-                        <p className="text-sm">Address</p>
+                        <p className="text-sm w-[64px]">Address</p>
                       </div>
                     </div>
                     <div className="mt-4 flex items-center">
@@ -164,7 +181,7 @@ export default function RegisterScreen3() {
                         />
                       </div>
                       <div className="ml-3">
-                        <p className="text-sm">Address</p>
+                        <p className="text-sm w-[64px]">Photo</p>
                       </div>
                     </div>
                   </div>
@@ -178,7 +195,7 @@ export default function RegisterScreen3() {
                         />
                       </div>
                       <div className="ml-3">
-                        <p className="text-sm">Address</p>
+                        <p className="text-sm w-[64px]">Signature</p>
                       </div>
                     </div>
                     <div className="mt-4 flex items-center">
@@ -190,18 +207,23 @@ export default function RegisterScreen3() {
                         />
                       </div>
                       <div className="ml-3">
-                        <p className="text-sm">Address</p>
+                        <p className="text-sm w-[64px]" >Birthdate</p>
                       </div>
                     </div>
                   </div>
-                  <button class="bg-custom-green rounded-sm  text-white center flex justify-center m-auto text-md py-3 px-7 mt-8 mb-4">
+                  <button className="bg-custom-green rounded-sm hover:font-bold hover:bg-gradient-radial from-[#ffffff49] to-[#339FA4] text-white center flex justify-center m-auto text-md py-3 px-7 mt-8 mb-4">
                 Save
               </button>
                 </div>
               </div>
             </div>
           </div>
-          <div className="columns-3 border">11</div>
+          <div className="columns-3  flex ">
+            <Link href="RegisterScreen4">
+
+          <Image src={left} alt='/' className="w-[3rem] h-[3rem] rotate-180 cursor-pointer mx-5 my-4" />
+            </Link>
+          </div>
         </div>
       </div>
     </div>

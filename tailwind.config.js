@@ -29,7 +29,8 @@ module.exports = {
        'custom-border-green':"#369EA4"
       },
       backgroundImage:{
-        'custum-bg-icon':"../images/selectarrow.png"
+        'custum-bg-icon':"../images/selectarrow.png",
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
       }
     },
   },
