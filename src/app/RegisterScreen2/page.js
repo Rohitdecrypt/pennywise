@@ -15,11 +15,11 @@ export default function RegisterScreen2() {
   const [International, setInternational] = useState(true);
   return (
     <>
-      <div className=" container mt-5 mx-auto">
+      <div className=" container  mt-5 mx-auto">
         <div className="w-[4rem] h-[4rem] rounded-full bg-[#369EA4] flex justify-center items-center">
           <Image className="w-[2rem] h-[2rem] " alt="/" src={house} />
         </div>
-        <div className="container mx-auto relative">
+        <div className="container max-w-[1140px]  mx-auto relative">
           <div className="h-[3rem]  w-[64%] mx-auto  flex items-center">
             <div className="h-[5px] border w-[100%] mx-auto ">
               <div className="h-[3px] w-[33.33%] bg-[#369EA4]"></div>
@@ -51,7 +51,7 @@ export default function RegisterScreen2() {
           </div>
         </div>
       </div>
-      <div className="container mx-auto">
+      <div className="container max-w-[1240px] mx-auto">
         <div className="flex flex-col items-center md:flex-row">
           <div className="w-1/12 flex items-center justify-center">
             <Link href="/RegisterScreen1">

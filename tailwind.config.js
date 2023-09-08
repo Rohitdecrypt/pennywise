@@ -31,6 +31,9 @@ module.exports = {
       backgroundImage:{
         'custum-bg-icon':"../images/selectarrow.png",
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+      },
+      boxShadow:{
+        'custom-box-shadow':'rgba(99, 99, 99, 0.2) 0px 2px 8px 0px'
       }
     },
   },
