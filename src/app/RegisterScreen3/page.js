@@ -56,10 +56,10 @@ export default function RegisterScreen3() {
             </Link>
   
           </div>
-          <div className="border shadow-md flex justify-center flex-col lg:flex-row items-center bg-[#369EA4]">
-            <div className="w-auto bg-[#fff] pt-10 pb-10">
+          <div className=" shadow-md flex justify-center flex-col lg:flex-row items-center bg-[#369EA4]">
+            <div className="w-auto bg-[#fff] pt-16 pb-16">
               <div className="flex flex-col sm:flex-row items-center">
-                <div className="md:p-5 p-2">
+                <div className="pl-5 pt-5">
                   <div>
                     <Image
                       className=" "
@@ -70,7 +70,7 @@ export default function RegisterScreen3() {
                     />
                   </div>
                 </div>
-                <div className="md:p-5 p-2">
+                <div className="pl-5 pt-5">
                   <div>
                     <Image
                       className=" "
@@ -83,7 +83,7 @@ export default function RegisterScreen3() {
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row items-center">
-                <div className="md:p-5  p-2">
+                <div className="pl-5  pt-5">
                   <div>
                     <Image
                       className=" "
@@ -94,7 +94,7 @@ export default function RegisterScreen3() {
                     />
                   </div>
                 </div>
-                <div className="md:p-5 p-2">
+                <div className="pl-5 pt-5">
                   <div>
                     <Image
                       className=" "
@@ -107,7 +107,7 @@ export default function RegisterScreen3() {
                 </div>
               </div>
             </div>
-            <div className="p-5">
+            <div className="p-10">
               <div className="bg-[#fff] p-5 rounded-md">
               <div className="inline-block relative bg-custom-grey rounded-full mt-10 w-[260px] sm:w-[310px] py-3  focus:border-none focus:outline-none">
                   <select className="bg-transparent rounded-[50px] py- px-5 w-full  text-custom  focus:border-none focus:outline-none appearance-none">

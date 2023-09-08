@@ -58,7 +58,7 @@ export default function RegisterScreen2() {
               <Image src={rightIcon} alt="previos button" className="w-auto" />
             </Link>
           </div>
-          <div className="w-10/12">
+          <div className="w-[1140px] mx-auto">
             <div className="bg-white shadow-md rounded px-8 pt-8 pb-10 mt-5">
               <div className="flex justify-center align-middle m-auto md:flex-row flex-col">
                 <button
@@ -87,8 +87,8 @@ export default function RegisterScreen2() {
                 </button>
               </div>
               {International ? (
-                <form className="w-[80%] mx-auto">
-                  <div className="relative w-[80%] mx-auto mb-5">
+                <form className="w-[90%] mx-auto">
+                  <div className="relative w-[90%] mx-auto mb-5">
                     <input
                       className="border border-custom-border-green rounded-full w-full py-3 mt-10 px-16 text-custom leading-tight focus:outline-none focus:shadow-outline text-md placeholder-[#369EA4]"
                       id="username"
@@ -104,9 +104,9 @@ export default function RegisterScreen2() {
 
                   <div className=" [w-80%]">
                     <div className="mb-5 w-full mx-auto">
-                      <div className="w-[80%] mx-auto">
+                      <div className="w-[90%] mx-auto">
                         <input
-                          className="bg-custom-grey rounded-full w-full py-3 px-6 text-custom leading-tight focus:outline-none focus:shadow-outline text-md  placeholder-[#369EA4]"
+                          className="bg-custom-grey rounded-full w-full max-w-[667px] py-3 px-6 text-custom leading-tight focus:outline-none focus:shadow-outline text-md  placeholder-[#369EA4]"
                           id="username"
                           type="text"
                           placeholder="Property Name"
@@ -114,23 +114,23 @@ export default function RegisterScreen2() {
                       </div>
                     </div>
 
-                    <div className=" flex w-[80%] mx-auto align-middle m-auto md:flex-row flex-col">
+                    <div className=" flex w-[90%] mx-auto align-middle m-auto md:flex-row flex-col">
                       <input
-                        className="bg-custom-grey rounded-full  md:w-1/4 w-full min-w-[200px] py-3 mr-2 px-6 mb-5 md:mb-0 text-custom leading-tight focus:outline-none focus:shadow-outline text-md placeholder-[#369EA4]"
+                        className="bg-custom-grey rounded-full  w-full max-w-[212px] py-3 mr-3 px-6 mb-5 md:mb-0 text-custom leading-tight focus:outline-none focus:shadow-outline text-md placeholder-[#369EA4]"
                         id="username"
                         type="text"
                         placeholder="Street No."
                       />
                       <input
-                        className="bg-custom-grey rounded-full md:w-2/4 w:full py-3 px-6 text-custom leading-tight focus:outline-none focus:shadow-outline text-md placeholder-[#369EA4]"
+                        className="bg-custom-grey rounded-full w-full max-w-[440px] py-3 px-6 text-custom leading-tight focus:outline-none focus:shadow-outline text-md placeholder-[#369EA4]"
                         id="username"
                         type="text"
                         placeholder="Street Name"
                       />
                     </div>
 
-                    <div className=" flex w-[80%] mx-auto align-middle relative md:flex-row flex-col">
-                      <select className="bg-custom-grey rounded-full  pl-6 mt-5 mr-2 py-3 min-w-[200px] text-custom text-md appearance-none">
+                    <div className=" flex w-[90%] mx-auto align-middle relative md:flex-row flex-col">
+                      <select className="bg-custom-grey rounded-full  pl-6 mt-5 mr-3   py-3 w-full max-w-[212px] text-custom text-md appearance-none">
                         <option>Street Type</option>
                         <option>Option 1</option>
                         <option>Option 2</option>
@@ -138,7 +138,7 @@ export default function RegisterScreen2() {
                       </select>
                       
                     <svg
-                      className="fill-current h-5 w-6 absolute top-[35px] md:left-[160px] sm:left-[260px]  left-[80%]"
+                      className="fill-current h-5 w-6 absolute top-[35px] left-[170px] "
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 20 20"
                     >
@@ -149,25 +149,25 @@ export default function RegisterScreen2() {
                  
 
                       <input
-                        className="bg-custom-grey rounded-full mt-5  md:w-2/4 w-full py-3 px-6 text-custom leading-tight focus:outline-none focus:shadow-outline text-md placeholder-[#369EA4]"
+                        className="bg-custom-grey rounded-full mt-5  w-full max-w-[440px] py-3 px-6 text-custom leading-tight focus:outline-none focus:shadow-outline text-md placeholder-[#369EA4]"
                         id="username"
                         type="text"
                         placeholder="Suburb"
                       />
                     </div>
 
-                    <div className="mb-5 mt-5 flex w-[80%] mx-auto">
+                    <div className="mb-5 mt-5 flex w-[90%] mx-auto">
                       <input
-                        className="bg-custom-grey rounded-full min-w-[200px] w-full  md:w-1/4 py-3 px-6 text-custom leading-tight focus:outline-none focus:shadow-outline text-md placeholder-[#369EA4]"
+                        className="bg-custom-grey rounded-full  w-full max-w-[212px]  py-3 px-6 text-custom leading-tight focus:outline-none focus:shadow-outline text-md placeholder-[#369EA4]"
                         id="username"
                         type="text"
                         placeholder="State"
                       />
                     </div>
 
-                    <div className="mb-6 flex w-[80%] mx-auto">
+                    <div className="mb-6 flex w-[90%] mx-auto">
                       <input
-                        className="bg-custom-grey min-w-[200px] rounded-full w-full  md:w-1/4 py-3 px-6 text-custom leading-tight focus:outline-none focus:shadow-outline text-md placeholder-[#369EA4]"
+                        className="bg-custom-grey min-w-[200px] rounded-full w-full max-w-[212px] py-3 px-6 text-custom leading-tight focus:outline-none focus:shadow-outline text-md placeholder-[#369EA4]"
                         id="username"
                         type="text"
                         placeholder="Postcode"
@@ -179,8 +179,8 @@ export default function RegisterScreen2() {
                   </div>
                 </form>
               ) : (
-                <form className="w-[80%] mx-auto">
-                  <div className="relative w-[80%] mx-auto mb-5">
+                <form className="w-[90%] mx-auto">
+                  <div className="relative w-[90%] mx-auto mb-5">
                     <input
                       className="border border-custom-border-green rounded-full w-full py-3 mt-10 px-16 text-custom leading-tight focus:outline-none focus:shadow-outline text-md placeholder-[#369EA4]"
                       id="username"
@@ -196,7 +196,7 @@ export default function RegisterScreen2() {
 
                   <div className=" [w-80%]">
                     <div className="mb-5 w-full mx-auto">
-                      <div className="w-[80%] mx-auto">
+                      <div className="w-[90%] mx-auto">
                         <input
                           className="bg-custom-grey rounded-full w-full py-3 px-6 text-custom leading-tight focus:outline-none focus:shadow-outline text-md  placeholder-[#369EA4]"
                           id="username"
