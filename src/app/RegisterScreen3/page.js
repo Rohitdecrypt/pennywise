@@ -226,6 +226,13 @@ export default function RegisterScreen3() {
           </div>
         </div>
       </div>
+
+      <div className="mx-auto">
+        <Link href='/RegisterScreen4'>
+
+        <p className="underline text-center mt-8 cursor-pointer">skip</p>
+        </Link>
+      </div>
     </div>
   );
 }
