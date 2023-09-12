@@ -38,4 +38,32 @@ h2{
 body {
   color: #369EA4;
   background: #ffffff;
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+   
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #b4b3b3;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #7e7d7d;
+  }
 }
+
+
+
+
+
+
+
+
+
