@@ -31,7 +31,7 @@ export default function () {
   const [sidebar, setSidebar] = useState(true);
 
   return (
-    <div className="container max-w-[1800px] flex mx-auto border px-5">
+    <div className="container max-w-full flex mx-auto border px-5">
       <div className="relative">
         <div className="flex items-center  ">
           {sidebar ? (
