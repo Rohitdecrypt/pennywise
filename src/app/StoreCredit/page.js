@@ -8,6 +8,8 @@ import { DatePicker } from "@mui/x-date-pickers";
 import { DemoContainer } from "@mui/x-date-pickers/internals/demo";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import { StatefulPinInput } from "react-input-pin-code";
+import blackman from "../assets/blackman.png"
 
 export default function () {
   const [modal, setModal] = useState(true);
@@ -126,7 +128,7 @@ export default function () {
         </div>
         {modal && (
           <div className="modal-container absolute h-screen w-full top-0 bottom-0 left-0 right-0 flex items-center justify-center">
-            <div className="modal-body w-[732px] bg-[#fff] border rounded-md border-black relative h-[792px] blur-none text-black">
+            <div className="modal-body w-[732px] bg-[#fff] border rounded-md border-black relative  blur-none text-black">
               <RxCross2
                 size={22}
                 className="absolute right-2 top-2 cursor-pointer"
@@ -216,7 +218,13 @@ export default function () {
                     </div>
                   </div>
                 </div>
-                <div className="w-[451px] h-10 border ml-48 rounded-full mt-6 "></div>
+                <div className="border w-[451px] ml-48 relative">
+
+                <Image src={blackman} alt="/" className="w-[30px] h-[30px] absolute right-[4px] top-[29px]"/>
+                <input type='text' className="w-[451px] h-10 border  rounded-full mt-6 border-black " />
+                </div>
+
+            
                 <div className="flex w-[84%] mx-auto items-center mt-6">
                   <div className="font-bold">Total Amount</div>
                   <div>
@@ -268,23 +276,38 @@ export default function () {
                       <div className="flex">
                         <LocalizationProvider dateAdapter={AdapterDayjs}>
                           <DemoContainer components={["DatePicker"]}>
-                            <DatePicker  />
+                            <DatePicker />
                           </DemoContainer>
                         </LocalizationProvider>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="flex w-[84%] mx-auto  mt-6 items-center">
+                <div className="flex w-[84%] mx-auto  mt-6 mb-5 items-center">
                   <div className="font-bold">Operator Pin</div>
                   <div>
-                    <div className="flex" style={{ marginLeft: "47px" }}>
+                    <div className="flex" style={{ marginLeft: "28px" }}>
                       <div className="flex">
-                    
+                        <StatefulPinInput
+                          length={6}
+                          size="lg"
+                          inputStyle={{
+                            // border: "1px solid #369EA4",
+                            borderRadius: "0px solid transparent",
+                            background: "#EEF2F6",
+                            boxShadow: "none",
+                            margin: "0px 10px",
+                          }}
+                        />
                       </div>
                     </div>
                   </div>
                 </div>
+                <div className="w-full h-24 border-t flex items-center justify-end ">
+                <button className="h-10 border  w-[125px] rounded-md bg-[#F1F1F1] mr-4" onClick={()=>{setModal(false)}}>Cancel</button>
+                <button className="h-10 border  w-[125px] rounded-md bg-[#000] text-[#fff] mr-8">Save</button>
+
+              </div>
               </div>
             </div>
           </div>

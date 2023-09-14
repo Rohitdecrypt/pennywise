@@ -33,9 +33,20 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
       },
       boxShadow:{
-        'custom-box-shadow':'rgba(99, 99, 99, 0.2) 0px 2px 8px 0px'
+        'custom-box-shadow':'rgba(99, 99, 99, 0.2) 0px 2px 8px 0px',
+        'circle-shadow': 'drop-shadow(0 3px 5px rgba(255, 0, 0, 0.5))',
       }
     },
   },
   plugins: [],
+  extend:{
+    before: {
+      '.before-line::before': {
+        content: "''",
+        display: 'block',
+        'border-bottom': '2px solid rgba(255, 0, 0, 0.5)',
+        'margin-bottom': '10px',
+      },
+    },
+  }
 }
