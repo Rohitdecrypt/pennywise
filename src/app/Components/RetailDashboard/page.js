@@ -1,194 +1,199 @@
 "use client";
 import React, { useState } from "react";
-import { AiOutlineRight } from "react-icons/ai";
-import logo from "../assets/PW_Logo.png";
-import Pawan from "../assets/My Pawn Icon Logo 1.png";
-import shose from "../assets/shose1.jpg";
-import arrow from "../assets/arrow.jpg";
-import settings from "../assets/settings.jpg";
-import Vector from "../assets/Vector.png";
-import { BiMenu } from "react-icons/bi";
-import { BiUserCircle, BiCreditCard } from "react-icons/bi";
-import { PiFoldersFill } from "react-icons/pi";
-import Searchbar from "../Components/DashSearchBar/page";
-
-import {
-  PiCalculatorFill,
-  PiPrinterFill,
-  PiCaretCircleUpDownBold,
-} from "react-icons/pi";
-import { BsBarChartFill } from "react-icons/bs";
-import { PiMoneyFill } from "react-icons/pi";
-import { AiOutlineLeft } from "react-icons/ai";
-import { MdOutlineLocalPolice } from "react-icons/md";
-import Link from "next/link";
+import logo from "../../assets/hut.png";
+import { AiOutlineShoppingCart, AiOutlineStock } from "react-icons/ai";
+import { BsFillTagFill, BsBarChartFill } from "react-icons/bs";
+import { BiSolidLayer, BiSolidBinoculars,BiDesktop } from "react-icons/bi";
+import { MdOutlineSpaceBar } from "react-icons/md";
+import { IoMdHammer } from "react-icons/io";
+import { GiReceiveMoney } from "react-icons/gi";
+import { TbReportAnalytics } from "react-icons/tb";
+import { PiTicketFill } from "react-icons/pi";
+// import { FaComputer } from "react-icons/fa";
 import Image from "next/image";
-import SideUser from "../Components/SideUser/page";
+import Link from "next/link";
+import { AiOutlineRight, AiOutlineLeft } from "react-icons/ai";
+import shose from "../../assets/shose1.jpg";
+import Pawan from "../../assets/My Pawn Icon Logo 1.png";
+import arrow from "../../assets/arrow.jpg";
+import settings from "../../assets/settings.jpg";
+import Vector from "../../assets/Vector.png";
 
-export default function () {
-  const [isOpen, setIsOpen] = useState();
-  const toggle = () => setIsOpen(!isOpen);
-  const [sidebar, setSidebar] = useState(true);
-
+const Retailboard = () => {
+  const [IsOpen, setIsOpen] = useState();
+  const toggle = () => setIsOpen(!IsOpen);
+  const [Sidebar, setSidebar] = useState(true);
   return (
     <div className="container max-w-full mt-3 flex mx-auto px-5">
       <div className="relative">
         <div className="flex items-center  ">
-          {sidebar ? (
+          {Sidebar ? (
             <div
-              style={{ width: isOpen ? "291px" : "88px" }}
+              style={{ width: IsOpen ? "291px" : "88px" }}
               className=" bg-[#369EA4] transition-all duration-300 ease-in rounded-[24px] h-screen"
             >
-              <div className="flex justify-center">
-                <Image className="" alt="/" src={logo} />
+              <div className="flex justify-center mt-5">
+                <Image className="cursor-pointer w-[76px] h-[76px]" alt="/" src={logo} />
               </div>
-              <div className="menu">
+              <div className="menu mt-5">
                 <div className="text-[#ffffff]">
                   <div className="flex items-center  gap-3 hover:bg-white hover:text-[#369EA4] h-[48px] px-3">
-                    <BiMenu
-                      style={{ margin: isOpen ? "0" : "auto" }}
+                    <AiOutlineShoppingCart
+                      style={{ margin: IsOpen ? "0" : "auto" }}
                       className="text-[28px] w-[30px] cursor-pointer"
                     />
                     <Link
-                      href="//"
-                      style={{ display: isOpen ? "block" : "none" }}
+                       href="/test"
+                      style={{ display: IsOpen ? "block" : "none" }}
                       className="text-[14px] font-normal"
                     >
                       {" "}
-                      Main Menu
+                      New Sale
                     </Link>
                   </div>
                   <div className="flex items-center   gap-3 hover:bg-white hover:text-[#369EA4] h-[48px] px-3">
-                    <BiUserCircle
-                      style={{ margin: isOpen ? "0" : "auto" }}
+                    <BsFillTagFill
+                      style={{ margin: IsOpen ? "0" : "auto" }}
                       className="text-[28px] w-[30px] cursor-pointer"
                     />
                     <Link
-                      href="//"
-                      style={{ display: isOpen ? "block" : "none" }}
+                       href="/hello"
+                      style={{ display: IsOpen ? "block" : "none" }}
                       className="text-[14px] font-normal"
                     >
-                      New Customer
+                      Stock Label Printing
                     </Link>
                   </div>
                   <div className="flex items-center   gap-3 hover:bg-white hover:text-[#369EA4] h-[48px] px-3">
-                    <BiCreditCard
-                      style={{ margin: isOpen ? "0" : "auto" }}
-                      className="text-[28px] w-[30px] cursor-pointer"
-                    />
-                    {/* <Image alt="/" src={CreditCard} className="img-fluid w-[24px]" style={{ margin: isOpen ? "0" : "auto" }} /> */}
-                    <Link
-                      href="//"
-                      style={{ display: isOpen ? "block" : "none" }}
-                      className="text-[14px] font-normal"
-                    >
-                      Retail Menu
-                    </Link>
-                  </div>
-                  <div className="flex items-center   gap-3  hover:bg-white hover:text-[#369EA4] h-[48px] px-3">
-                    <PiFoldersFill
-                      style={{ margin: isOpen ? "0" : "auto" }}
-                      className="text-[28px] w-[30px] cursor-pointer"
-                    />
-                    <Link
-                      href="//"
-                      style={{ display: isOpen ? "block" : "none" }}
-                      className="text-[14px] font-normal"
-                    >
-                      Loan Bays & Locations
-                    </Link>
-                  </div>
-                  <div className="flex items-center   gap-3 hover:bg-white hover:text-[#369EA4] h-[48px] px-3">
-                    <PiPrinterFill
-                      style={{ margin: isOpen ? "0" : "auto" }}
+                    <BiSolidLayer
+                      style={{ margin: IsOpen ? "0" : "auto" }}
                       className="text-[28px] w-[30px] cursor-pointer"
                     />
 
                     <Link
-                      href="//"
-                      style={{ display: isOpen ? "block" : "none" }}
+                       href="/hello"
+                      style={{ display: IsOpen ? "block" : "none" }}
                       className="text-[14px] font-normal"
                     >
-                      Reprint Receipts
+                      Batch Stock Pricing
                     </Link>
                   </div>
-                  <div className="flex items-center   gap-3 hover:bg-white hover:text-[#369EA4] h-[48px] px-3">
-                    <PiCalculatorFill
-                      style={{ margin: isOpen ? "0" : "auto" }}
+                  <div className="flex items-center   gap-3  hover:bg-white hover:text-[#369EA4] h-[48px] px-3">
+                    <MdOutlineSpaceBar
+                      style={{ margin: IsOpen ? "0" : "auto" }}
                       className="text-[28px] w-[30px] cursor-pointer"
                     />
                     <Link
-                      href="//"
-                      style={{ display: isOpen ? "block" : "none" }}
+                       href="/hello"
+                      style={{ display: IsOpen ? "block" : "none" }}
                       className="text-[14px] font-normal"
                     >
-                      Till Balancing
+                      Stock Transfer
                     </Link>
                   </div>
                   <div className="flex items-center   gap-3 hover:bg-white hover:text-[#369EA4] h-[48px] px-3">
-                    {/* <Image alt="/" src={CaretCircle} className="img-fluid img w-[24px]" style={{ margin: isOpen ? "0" : "auto" }} /> */}
-                    <PiCaretCircleUpDownBold
-                      style={{ margin: isOpen ? "0" : "auto" }}
-                      className="text-[28px] w-[30px] cursor-pointer rotate-90"
+                    <IoMdHammer
+                      style={{ margin: IsOpen ? "0" : "auto" }}
+                      className="text-[28px] w-[30px] cursor-pointer"
                     />
+
                     <Link
-                      href="//"
-                      style={{ display: isOpen ? "block" : "none" }}
+                       href="/hello"
+                      style={{ display: IsOpen ? "block" : "none" }}
                       className="text-[14px] font-normal"
                     >
-                      Cash Till Transfer
+                      Repairs
+                    </Link>
+                  </div>
+                  <div className="flex items-center   gap-3 hover:bg-white hover:text-[#369EA4] h-[48px] px-3">
+                    <BsBarChartFill
+                      style={{ margin: IsOpen ? "0" : "auto" }}
+                      className="text-[28px] w-[30px] cursor-pointer"
+                    />
+                    <Link
+                       href="/hello"
+                      style={{ display: IsOpen ? "block" : "none" }}
+                      className="text-[14px] font-normal"
+                    >
+                      Todays Sale
+                    </Link>
+                  </div>
+                  <div className="flex items-center   gap-3 hover:bg-white hover:text-[#369EA4] h-[48px] px-3">
+                    <GiReceiveMoney
+                      style={{ margin: IsOpen ? "0" : "auto" }}
+                      className="text-[28px] w-[30px] cursor-pointer "
+                    />
+                    <Link
+                       href="/hello"
+                      style={{ display: IsOpen ? "block" : "none" }}
+                      className="text-[14px] font-normal"
+                    >
+                      Refunds and Cancellations
                     </Link>
                   </div>
                   <div className="flex items-center   gap-3 hover:bg-white  hover:text-[#369EA4] h-[48px] px-3">
-                    <BsBarChartFill
-                      style={{ margin: isOpen ? "0" : "auto" }}
+                    <BiSolidBinoculars
+                      style={{ margin: IsOpen ? "0" : "auto" }}
                       className="text-[28px] w-[30px] cursor-pointer"
                     />
                     <Link
-                      href="//"
-                      style={{ display: isOpen ? "block" : "none" }}
+                       href="/hello"
+                      style={{ display: IsOpen ? "block" : "none" }}
                       className="text-[14px] font-normal"
                     >
-                      Loans To Retail
+                      Stock Enquiry
                     </Link>
                   </div>
                   <div className="flex items-center   gap-3 hover:bg-white hover:text-[#369EA4] h-[48px] px-3">
-                    <PiCalculatorFill
-                      style={{ margin: isOpen ? "0" : "auto" }}
+                    <AiOutlineStock
+                      style={{ margin: IsOpen ? "0" : "auto" }}
                       className="text-[28px] w-[30px] cursor-pointer"
                     />
                     <Link
-                      href="//"
-                      style={{ display: isOpen ? "block" : "none" }}
+                       href="/hello"
+                      style={{ display: IsOpen ? "block" : "none" }}
                       className="text-[14px] font-normal"
                     >
-                      Reporting
+                      New Stock Purchase
                     </Link>
                   </div>
                   <div className="flex items-center   gap-3 hover:bg-white hover:text-[#369EA4] h-[48px] px-3">
-                    <PiMoneyFill
-                      style={{ margin: isOpen ? "0" : "auto" }}
+                    <TbReportAnalytics
+                      style={{ margin: IsOpen ? "0" : "auto" }}
                       className="text-[28px] w-[30px] cursor-pointer"
                     />
                     <Link
-                      href="//"
-                      style={{ display: isOpen ? "block" : "none" }}
+                       href="/hello"
+                      style={{ display: IsOpen ? "block" : "none" }}
                       className="text-[14px] font-normal"
                     >
-                      Todays Transactions
+                      Stocktakes
                     </Link>
                   </div>
                   <div className="flex items-center gap-3 hover:bg-white hover:text-[#369EA4] h-[48px] px-3">
-                    <MdOutlineLocalPolice
-                      style={{ margin: isOpen ? "0" : "auto" }}
+                    <PiTicketFill
+                      style={{ margin: IsOpen ? "0" : "auto" }}
                       className="text-[28px] w-[30px] cursor-pointer"
                     />
                     <Link
-                      href="//"
-                      style={{ display: isOpen ? "block" : "none" }}
+                       href="/StoreCredit"
+                      style={{ display: IsOpen ? "block" : "none" }}
                       className="text-[14px] font-normal"
                     >
-                      Police Centre
+                      Voucher and Store Credits
+                    </Link>
+                  </div>
+                  <div className="flex items-center   gap-3 hover:bg-white hover:text-[#369EA4] h-[48px] px-3">
+                    <BiDesktop
+                      style={{ margin: IsOpen ? "0" : "auto" }}
+                      className="text-[28px] w-[30px] cursor-pointer"
+                    />
+                    <Link
+                       href="/Webstore"
+                      style={{ display: IsOpen ? "block" : "none" }}
+                      className="text-[14px] font-normal"
+                    >
+                      Webstore Functions
                     </Link>
                   </div>
                 </div>
@@ -202,7 +207,7 @@ export default function () {
             onClick={toggle}
             className="side-btn w-[16px] h-[60px]  bg-[#369ea45e] rounded-r-lg flex items-center cursor-pointer"
           >
-            {isOpen ? (
+            {IsOpen ? (
               <AiOutlineLeft color="#369EA4" />
             ) : (
               <AiOutlineRight color="#369EA4" />
@@ -212,25 +217,22 @@ export default function () {
 
         <div
           style={{
-            width: isOpen ? "291px" : "88px",
-            background: isOpen ? "#ffffff" : "none",
+            width: IsOpen ? "291px" : "88px",
+            background: IsOpen ? "#ffffff" : "none",
           }}
           className={`side_footer ${
-            isOpen ? "w-[291px] bg-[#ffffff]" : "w-[88px]"
+            IsOpen ? "w-[291px] bg-[#ffffff]" : "w-[88px]"
           } absolute bottom-0 rounded-[24px] `}
         >
           <div
-            style={{ display: isOpen ? "block" : "none" }}
+            style={{ display: IsOpen ? "block" : "none" }}
             className="footer-main"
           >
             <div className="flex justify-between">
-
-            <div className="h-2 w-[96px] mt-2 bg-[#369ea465] ml-4  rounded-full"></div>
-            <div className="h-2 w-[96px] mt-2 bg-[#369ea465] mr-4 rounded-full"></div>
-
+              <div className="h-2 w-[96px] mt-2 bg-[#369ea465] ml-4  rounded-full"></div>
+              <div className="h-2 w-[96px] mt-2 bg-[#369ea465] mr-4 rounded-full"></div>
             </div>
             <details class="">
-
               <summary class="list-none bg-[#ffffff] p-2 rounded-full absolute top-[-25px] left-[42%] group ">
                 <Image
                   alt="/"
@@ -251,11 +253,11 @@ export default function () {
               alt="/"
               src={Pawan}
               className="img-fluid mr-1 cursor-pointer"
-              style={{ display: isOpen ? "block" : "none" }}
+              style={{ display: IsOpen ? "block" : "none" }}
             />
             <div
               style={{
-                display: isOpen ? "block" : "none",
+                display: IsOpen ? "block" : "none",
                 filter:
                   "drop-shadow(0 3px 5px rgba(54, 158, 164, 0.7411764706))",
               }}
@@ -274,7 +276,7 @@ export default function () {
             </div>
             <div
               style={{
-                display: isOpen ? "block" : "none",
+                display: IsOpen ? "block" : "none",
                 filter:
                   "drop-shadow(0 3px 5px rgba(54, 158, 164, 0.7411764706))",
               }}
@@ -285,8 +287,7 @@ export default function () {
           </div>
         </div>
       </div>
-      <Searchbar />
-      <SideUser />
     </div>
   );
-}
+};
+export default Retailboard;

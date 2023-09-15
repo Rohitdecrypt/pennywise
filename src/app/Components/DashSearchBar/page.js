@@ -15,10 +15,10 @@ function Searchbar() {
   return (
     <div className=" Searchbar relative h-screen ms-2 w-full">
       <div className=" flex items-center  ">
-        <div className=" relative w-fit ">
+        <div className=" relative w-full max-w-[600px]">
           <input
             type="email"
-            className="form-control border-[#369EA4] border-[2px] rounded-full placeholder-[#369EA4] pl-[32px] ps-4 flex-1 w-[600px] "
+            className="form-control border-[#369EA4] border-[2px] rounded-full placeholder-[#369EA4] pl-[34px] ps-4 flex-1 max-w-[600px] w-full"
             id="exampleFormControlInput1"
             placeholder="Search"
           />
@@ -32,7 +32,7 @@ function Searchbar() {
         <Image alt="/" src={Vector2} className="img-fluid ms-2" />
       </div>
 
-      <div className=" Search_footer  absolute bottom-[50px] max-[992px]:hidden w-full ">
+      <div className=" Search_footer  absolute bottom-[50px] max-[1100px]:hidden w-full ">
         <div className="text-[#369EA4] mb-2">
           <h4 className="text-[16px] font-[500] ">Last Transaction</h4>
         </div>
@@ -96,7 +96,7 @@ function Searchbar() {
       </div>
 
       <div
-        className={`hidden max-[992px]:block absolute bottom-[20px] pb-3 flex-1 w-[100%] `}
+        className={`hidden max-[1100px]:block absolute bottom-[20px] pb-3 flex-1 w-[100%] `}
       >
         <div className="">
           <button

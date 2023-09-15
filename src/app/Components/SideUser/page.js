@@ -15,7 +15,7 @@ function SideUser() {
                     </div>
                     <h5 className='ms-2 text-[16px] font-[600]  font-["Poppins", sans-serif]'>Welcome Back!</h5>
                 </div>
-                <div className='bg-[#ffffff] h-[260px] rounded-b-[17px] mb-3'>
+                <div className='bg-[#fbfcfc] h-[553px] rounded-b-[17px] mb-3'>
                     <div className='bg-[#369EA4]  rounded-t-[17px]  py-4 px-3 flex justify-center items-center mt-3 max-[992px]:flex-col'>
                         <div className='bg-[#ffffff] rounded-full p-2.5'>
                             <LuListChecks className='stroke-[#369EA4] w-[16px] h-[16px] m-0.5' />
@@ -24,7 +24,7 @@ function SideUser() {
                     </div>
                 </div>
 
-                <div className='bg-[#ffffff]  rounded-b-[17px]'>
+                <div className='bg-[#fbfcfc]  rounded-b-[17px]'>
                     <div className='bg-[#369EA4]  rounded-t-[17px]  py-4 px-3 flex justify-center items-center mt-3 max-[992px]:flex-col'>
                         <div className='bg-[#ffffff] rounded-full p-2.5'>
                             <BiLogoTelegram className='fill-[#369EA4] w-[16px] h-[16px] m-0.5' />

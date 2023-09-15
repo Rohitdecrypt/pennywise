@@ -10,17 +10,28 @@ import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { StatefulPinInput } from "react-input-pin-code";
 import blackman from "../assets/blackman.png"
+import Retailboard from "../Components/RetailDashboard/page";
+import withPageLayout from "../hoc/withPageLayout";
 
-export default function () {
-  const [modal, setModal] = useState(true);
+
+
+
+const StoreCredit = () => {
+  const [modal, setModal] = useState(false);
   const [International, setInternational] = useState(true);
   const [radioLoan, setRadioLoan] = useState(false);
   const [radioBuy, setRadioBuy] = useState(false);
+  console.log("inside store page")
 
   return (
     <>
-      <div className="modal relative h-full">
-        <div className={`container mx-auto ${modal == true ? "blur-sm" : ""}`}>
+    <div className="flex w-full">
+
+    <div>
+      {/* <Retailboard/> */}
+    </div>
+      <div className="modal relative h-full w-full">
+        <div className={`pr-5 w-full ${modal == true ? "blur-sm" : ""}`}>
           <div className="flex mt-5 w-full items-center">
             <div className="text-center text-[#000000] font-bold">
               VOUCHERS & STORE CREDITS
@@ -313,6 +324,9 @@ export default function () {
           </div>
         )}
       </div>
+    </div>
     </>
   );
 }
+
+export default withPageLayout(StoreCredit);
