@@ -5,6 +5,7 @@ import cart from '../../assets/CartUser.jpg'
 import Vector from "../../assets/vectorgroup.png"
 import Pen from "../../assets/Pen.png"
 import Image from 'next/image';
+import Link from 'next/link';
 const NewCart = () => {
 
     const [count, setCount] = useState(0)
@@ -24,7 +25,9 @@ const NewCart = () => {
                             <Image src={Pen} className='w-auto ml-4' />
                         </div>
                     </div>
-                    <div className='  w-full border-2 border-[#000000]  rounded-md p-[10px]'>
+                    <div className='h-[800px]  px-2 overflow-y-scroll'>
+
+                    <div className='  w-full border-2 border-[#000000]  rounded-xl  p-3 my-3'>
                         <p className='font-light text-[15px] text-[#000000]'>#0123456789</p>
                         <p className='font-bold text-[18px] text-[#000000] pb-2'>Product Name Here</p>
                         <div className='flex justify-between'>
@@ -40,22 +43,91 @@ const NewCart = () => {
                         <div className='w-full h-[1px] bg-[#9F9F9F] mb-1'></div>
                         <p className='text-[#818181] font-light text-[12px]'>Lorem ipsum dolor sit amet, consectet dipiscing...</p>
                     </div>
-                    <div className='  w-full border-2 border-[#000000]  rounded-md p-[10px]'>
+                    <div className='  w-full border-2 border-[#000000]  rounded-xl  p-3 my-3'>
                         <p className='font-light text-[15px] text-[#000000]'>#0123456789</p>
                         <p className='font-bold text-[18px] text-[#000000] pb-2'>Product Name Here</p>
                         <div className='flex justify-between'>
                             <p className='font-light text-[20px] text-[#000000]'>$000.00</p>
                             <div className='flex items-center'>
                                 <AiFillMinusCircle className='text-[26px]'
-                                    onClick={() => setCount1(count1 - 1)} />
-                                <p className='px-1 text-[20px] font-small'>{count1}</p>
+                                    onClick={() => setCount(count - 1)} />
+                                <p className='px-1 text-[20px] font-small'>{count}</p>
                                 <AiFillPlusCircle className='text-[26px]'
-                                 onClick={() => setCount1(count1 + 1)} />
+                                    onClick={() => setCount(count + 1)} />
                             </div>
                         </div>
                         <div className='w-full h-[1px] bg-[#9F9F9F] mb-1'></div>
                         <p className='text-[#818181] font-light text-[12px]'>Lorem ipsum dolor sit amet, consectet dipiscing...</p>
                     </div>
+                    <div className='  w-full border-2 border-[#000000]  rounded-xl  p-3 my-3'>
+                        <p className='font-light text-[15px] text-[#000000]'>#0123456789</p>
+                        <p className='font-bold text-[18px] text-[#000000] pb-2'>Product Name Here</p>
+                        <div className='flex justify-between'>
+                            <p className='font-light text-[20px] text-[#000000]'>$000.00</p>
+                            <div className='flex items-center'>
+                                <AiFillMinusCircle className='text-[26px]'
+                                    onClick={() => setCount(count - 1)} />
+                                <p className='px-1 text-[20px] font-small'>{count}</p>
+                                <AiFillPlusCircle className='text-[26px]'
+                                    onClick={() => setCount(count + 1)} />
+                            </div>
+                        </div>
+                        <div className='w-full h-[1px] bg-[#9F9F9F] mb-1'></div>
+                        <p className='text-[#818181] font-light text-[12px]'>Lorem ipsum dolor sit amet, consectet dipiscing...</p>
+                    </div>
+                    <div className='  w-full border-2 border-[#000000]  rounded-xl  p-3 my-3'>
+                        <p className='font-light text-[15px] text-[#000000]'>#0123456789</p>
+                        <p className='font-bold text-[18px] text-[#000000] pb-2'>Product Name Here</p>
+                        <div className='flex justify-between'>
+                            <p className='font-light text-[20px] text-[#000000]'>$000.00</p>
+                            <div className='flex items-center'>
+                                <AiFillMinusCircle className='text-[26px]'
+                                    onClick={() => setCount(count - 1)} />
+                                <p className='px-1 text-[20px] font-small'>{count}</p>
+                                <AiFillPlusCircle className='text-[26px]'
+                                    onClick={() => setCount(count + 1)} />
+                            </div>
+                        </div>
+                        <div className='w-full h-[1px] bg-[#9F9F9F] mb-1'></div>
+                        <p className='text-[#818181] font-light text-[12px]'>Lorem ipsum dolor sit amet, consectet dipiscing...</p>
+                    </div>
+                    <div className='  w-full border-2 border-[#000000]  rounded-xl  p-3 my-3'>
+                        <p className='font-light text-[15px] text-[#000000]'>#0123456789</p>
+                        <p className='font-bold text-[18px] text-[#000000] pb-2'>Product Name Here</p>
+                        <div className='flex justify-between'>
+                            <p className='font-light text-[20px] text-[#000000]'>$000.00</p>
+                            <div className='flex items-center'>
+                                <AiFillMinusCircle className='text-[26px]'
+                                    onClick={() => setCount(count - 1)} />
+                                <p className='px-1 text-[20px] font-small'>{count}</p>
+                                <AiFillPlusCircle className='text-[26px]'
+                                    onClick={() => setCount(count + 1)} />
+                            </div>
+                        </div>
+                        <div className='w-full h-[1px] bg-[#9F9F9F] mb-1'></div>
+                        <p className='text-[#818181] font-light text-[12px]'>Lorem ipsum dolor sit amet, consectet dipiscing...</p>
+                    </div>
+                    <div className='  w-full border-2 border-[#000000]  rounded-xl  p-3 my-3'>
+                        <p className='font-light text-[15px] text-[#000000]'>#0123456789</p>
+                        <p className='font-bold text-[18px] text-[#000000] pb-2'>Product Name Here</p>
+                        <div className='flex justify-between'>
+                            <p className='font-light text-[20px] text-[#000000]'>$000.00</p>
+                            <div className='flex items-center'>
+                                <AiFillMinusCircle className='text-[26px]'
+                                    onClick={() => setCount(count - 1)} />
+                                <p className='px-1 text-[20px] font-small'>{count}</p>
+                                <AiFillPlusCircle className='text-[26px]'
+                                    onClick={() => setCount(count + 1)} />
+                            </div>
+                        </div>
+                        <div className='w-full h-[1px] bg-[#9F9F9F] mb-1'></div>
+                        <p className='text-[#818181] font-light text-[12px]'>Lorem ipsum dolor sit amet, consectet dipiscing...</p>
+                    </div>
+
+                    </div>
+
+
+                  
 
 
                     <div className='border-2 w-full relative  px-3 py-3'>
@@ -79,14 +151,14 @@ const NewCart = () => {
                         <div className='h-2 absolute top-[110px] -left-[0px] w-[100%] py-2 bg-white'>
                             <div class="border-dashed border-2 border-black "></div>
                         </div>
-                        <div className='flex justify-between mt-[50px]'>
+                        <div className='flex justify-between items-center mt-[50px]'>
                             <div className='me-[0px]'>
                                 <p className='text-[15px] font-light'>Total:</p>
                                 <p className='text-[20px] font-bold'>$0000.00</p>
 
                             </div>
                             <div>
-                                <button class="rounded bg-[#000000] py-2 px-4 text-[16px] text-[#ffffff]">Checkout</button>
+                               <Link href='/Components/newSaleComponents/Checkout'> <button class="rounded bg-[#000000] py-2 px-4 text-[16px] text-[#ffffff]">Checkout</button></Link>
                             </div>
                         </div>
                     </div>
