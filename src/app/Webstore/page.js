@@ -208,4 +208,4 @@ const Webstore = () => {
   );
 }
 
-export default Webstore
+export default withPageLayout(Webstore)

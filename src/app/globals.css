@@ -40,7 +40,7 @@ h2{
  } */
 }
 body {
-  display: flex;
+  /* display: flex; */
   color: #369EA4;
   background: #ffffff;
   ::-webkit-scrollbar {
