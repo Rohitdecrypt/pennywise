@@ -325,4 +325,4 @@ const StoreCredit = () => {
   );
 }
 
-export default StoreCredit
+export default withPageLayout(StoreCredit)

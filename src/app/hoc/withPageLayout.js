@@ -1,13 +1,15 @@
-"use client"
-import React from 'react'
-import Layout from "../page";
+// HOC component "withPageLayout.js"
+import React from "react";
+import Layout from "../layout";
+import Retailboard from "../Components/RetailDashboard/page";
 
+const withPageLayout = (WrappedComponent) => {
+  return () => (
+    <div className="flex w-full">
+      <Retailboard />
+      <WrappedComponent />
+    </div>
+  );
+};
 
-export const withPageLayout = (WrappedComponent) => {
-  return (props) => (
-    <Layout>
-    <WrappedComponent {...props} />
-  </Layout>
-  )
-}
 export default withPageLayout;
