@@ -6,8 +6,9 @@ import Retailboard from './Components/RetailDashboard/page'
 
 export default function Home({children}) {
   return (
-  <main>
-
+  <main className='flex w-full'>
+   <Retailboard/>
+   {children}
   </main>
   )
 }

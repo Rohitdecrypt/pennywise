@@ -1,11 +1,13 @@
-import React from "react";
-import Layout from "../layout";
-function withPageLayout(WrappedComponent) {
+"use client"
+import React from 'react'
+import Layout from "../page";
+
+
+export const withPageLayout = (WrappedComponent) => {
   return (props) => (
     <Layout>
-      <WrappedComponent {...props} />
-    </Layout>
-  );
+    <WrappedComponent {...props} />
+  </Layout>
+  )
 }
-
 export default withPageLayout;

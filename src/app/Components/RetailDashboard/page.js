@@ -24,7 +24,7 @@ const Retailboard = () => {
   const toggle = () => setIsOpen(!IsOpen);
   const [Sidebar, setSidebar] = useState(true);
   return (
-    <div className="container max-w-full mt-3 flex mx-auto px-5">
+    <div className="mt-3 flex px-5">
       <div className="relative">
         <div className="flex items-center  ">
           {Sidebar ? (
@@ -43,7 +43,7 @@ const Retailboard = () => {
                       className="text-[28px] w-[30px] cursor-pointer"
                     />
                     <Link
-                       href="/test"
+                       href="/NewSale"
                       style={{ display: IsOpen ? "block" : "none" }}
                       className="text-[14px] font-normal"
                     >

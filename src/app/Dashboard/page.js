@@ -229,16 +229,16 @@ export default function () {
             <div className="h-2 w-[96px] mt-2 bg-[#369ea465] mr-4 rounded-full"></div>
 
             </div>
-            <details class="">
+            <details className="">
 
-              <summary class="list-none bg-[#ffffff] p-2 rounded-full absolute top-[-25px] left-[42%] group ">
+              <summary className="list-none bg-[#ffffff] p-2 rounded-full absolute top-[-25px] left-[42%] group ">
                 <Image
                   alt="/"
                   src={shose}
                   className="img-fluid border-[#369EA4] cursor-pointer "
                 />
               </summary>
-              <div class="pt-4 text-center text-[#369EA4] text-[18px] font-[700] leading-[1.2rem]">
+              <div className="pt-4 text-center text-[#369EA4] text-[18px] font-[700] leading-[1.2rem]">
                 <p className=" ">
                   Cash Convenience <br />
                   Macquarie Fields

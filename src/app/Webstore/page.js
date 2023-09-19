@@ -1,17 +1,14 @@
+"use client"
 import React from "react";
 import search from "../assets/search.png";
 import Image from "next/image";
 import { PiPencil } from "react-icons/pi";
-import Retailboard from "../Components/RetailDashboard/page";
 import withPageLayout from "../hoc/withPageLayout";
 
-const store = () => {
+const Webstore = () => {
   return (
     <>
-      <div className="flex w-full">
-        <div>
-          {/* <Retailboard /> */}
-        </div>
+    
         <div className="pr-5 w-full ">
           <div className="flex mt-5 w-full items-center">
             <div className="text-center text-[#000000] font-bold">
@@ -32,7 +29,7 @@ const store = () => {
               className=" absolute w-5 bottom-2 left-4"
             />
           </div>
-          <div className="mt-10 border border-black rounded-2xl py-3 px-2">
+          <div className="mt-10 border border-black rounded-2xl py-3 px-2 overflow-x-auto">
             <div className="  px-10 overflow-x-auto overflow-y-auto max-h-[700px] ">
               <table className=" min-w-full text-[#000000] ">
                 <thead className="sticky top-0 bg-[#fff] py-2">
@@ -206,9 +203,9 @@ const store = () => {
             </div>
           </div>
         </div>
-      </div>
+
     </>
   );
 }
 
-export default withPageLayout(store)
+export default Webstore

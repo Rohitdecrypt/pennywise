@@ -10,7 +10,6 @@ import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { StatefulPinInput } from "react-input-pin-code";
 import blackman from "../assets/blackman.png"
-import Retailboard from "../Components/RetailDashboard/page";
 import withPageLayout from "../hoc/withPageLayout";
 
 
@@ -25,11 +24,8 @@ const StoreCredit = () => {
 
   return (
     <>
-    <div className="flex w-full">
 
-    <div>
-      {/* <Retailboard/> */}
-    </div>
+   
       <div className="modal relative h-full w-full">
         <div className={`pr-5 w-full ${modal == true ? "blur-sm" : ""}`}>
           <div className="flex mt-5 w-full items-center">
@@ -51,7 +47,7 @@ const StoreCredit = () => {
               className=" absolute w-5 bottom-2 left-4"
             />
           </div>
-          <div className="mt-10 border border-black rounded-2xl py-3 px-2">
+          <div className="mt-10 border border-black rounded-2xl py-3 px-2 overflow-x-auto">
             <div className="  px-10 overflow-x-auto  overflow-y-auto max-h-[700px] ">
               <table className=" min-w-full text-[#000000] ">
                 <thead className="sticky top-0 bg-[#fff] py-2">
@@ -324,9 +320,9 @@ const StoreCredit = () => {
           </div>
         )}
       </div>
-    </div>
+   
     </>
   );
 }
 
-export default withPageLayout(StoreCredit);
+export default StoreCredit
