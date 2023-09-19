@@ -16,10 +16,10 @@ export default function page() {
         <div className="w-[4rem] h-[4rem] rounded-full bg-[#369EA4] flex justify-center items-center ml-2">
           <Image className="w-[2rem] h-[2rem] " alt="/" src={house} />
         </div>
-        <div className="container mx-auto relative">
+        <div className="container mx-auto max-w-[1140px] relative">
           <div className="h-[3rem]  w-[64%] mx-auto  flex items-center">
             <div className="h-[5px] border w-[100%] mx-auto ">
-              <div className="h-[3px] w-[99.99%] bg-[#369EA4]"></div>
+              <div className="h-[3px] w-[66.66%] bg-[#369EA4]"></div>
             </div>
             <div className="absolute w-[65%] left-[17.5%]">
               <div className="icons  flex justify-between">
@@ -39,7 +39,7 @@ export default function page() {
                   className="w-[2.8rem] h-[2.8rem]"
                 />
                 <Image
-                  src={msgIcon}
+                  src={tickIcon}
                   alt="/"
                   className="w-[2.8rem] h-[2.8rem]"
                 />
@@ -106,6 +106,12 @@ export default function page() {
             </Link>
           </div>
         </div>
+      </div>
+      <div className="mx-auto">
+        <Link href='/LoginScreenPassword'>
+
+        <p className="underline text-center mt-8 cursor-pointer">skip</p>
+        </Link>
       </div>
     </div>
   );

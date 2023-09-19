@@ -12,11 +12,11 @@ import Link from "next/link";
 export default function RegisterScreen3() {
   return (
     <div>
-      <div className=" container mt-5 mx-auto">
+      <div className=" container mt-5  mx-auto">
         <div className="w-[4rem] h-[4rem] rounded-full bg-[#369EA4] flex justify-center items-center">
           <Image className="w-[2rem] h-[2rem] " alt="/" src={house} />
         </div>
-        <div className="container mx-auto relative">
+        <div className="container mx-auto max-w-[1140px] relative">
           <div className="h-[3rem]  w-[64%] mx-auto  flex items-center">
             <div className="h-[5px] border w-[100%] mx-auto ">
               <div className="h-[3px] w-[66.66%] bg-[#369EA4]"></div>
@@ -48,7 +48,7 @@ export default function RegisterScreen3() {
           </div>
         </div>
       </div>
-      <div className="container mt-10 mx-auto">
+      <div className="container  mt-10 mx-auto">
         <div className="flex items-center justify-center flex-col md:flex-row ">
           <div className="columns-3 flex justify-center ">
             <Link href="/RegisterScreen2">
@@ -56,13 +56,13 @@ export default function RegisterScreen3() {
             </Link>
   
           </div>
-          <div className="border shadow-md flex justify-center flex-col lg:flex-row items-center bg-[#369EA4]">
+          <div className=" shadow-md flex justify-center flex-col lg:flex-row items-center ">
             <div className="w-auto bg-[#fff] pt-10 pb-10">
               <div className="flex flex-col sm:flex-row items-center">
-                <div className="md:p-5 p-2">
-                  <div>
+                <div className="">
+                  <div className="pl-5 pb-5">
                     <Image
-                      className=" "
+                      
                       alt="/"
                       width={200}
                       height={200}
@@ -70,10 +70,10 @@ export default function RegisterScreen3() {
                     />
                   </div>
                 </div>
-                <div className="md:p-5 p-2">
-                  <div>
+                <div className="">
+                  <div className="pl-5 pb-5 pr-5">
                     <Image
-                      className=" "
+                     
                       width={200}
                       height={200}
                       alt="/"
@@ -83,8 +83,8 @@ export default function RegisterScreen3() {
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row items-center">
-                <div className="md:p-5  p-2">
-                  <div>
+                <div className="">
+                  <div className="pl-5 pb-5 ">
                     <Image
                       className=" "
                       width={200}
@@ -94,8 +94,8 @@ export default function RegisterScreen3() {
                     />
                   </div>
                 </div>
-                <div className="md:p-5 p-2">
-                  <div>
+                <div className="">
+                  <div className="pl-5 pb-5 pr-5">
                     <Image
                       className=" "
                       width={200}
@@ -107,7 +107,7 @@ export default function RegisterScreen3() {
                 </div>
               </div>
             </div>
-            <div className="p-5">
+            <div className="pt-8 pb-8 pl-10 pr-10 bg-[#369EA4]">
               <div className="bg-[#fff] p-5 rounded-md">
               <div className="inline-block relative bg-custom-grey rounded-full mt-10 w-[260px] sm:w-[310px] py-3  focus:border-none focus:outline-none">
                   <select className="bg-transparent rounded-[50px] py- px-5 w-full  text-custom  focus:border-none focus:outline-none appearance-none">
@@ -126,12 +126,12 @@ export default function RegisterScreen3() {
                     </svg>
                   </div>
                 </div>
-                <div className="p-2 shadow-md mt-4">
+                <div className="p-3 shadow-custom-box-shadow mt-4">
                   <div>
                     <input
                       type="text"
                       placeholder="Issued By :"
-                      className="bg-[#EEF2F6] py-3 pl-5 placeholder-[#369EA4] rounded-full mx-auto w-full  focus-visible:outline-[#A1D2D5]"
+                      className="bg-[#EEF2F6]  py-3 pl-5 placeholder-[#369EA4] rounded-full mx-auto w-full  focus-visible:outline-[#A1D2D5]"
                     />
                   </div>
                   <div className="mt-4">
@@ -159,7 +159,7 @@ export default function RegisterScreen3() {
                     Visible on ID
                   </p>
 
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center w-[90%] mx-auto justify-between">
                     <div className="mt-4 flex items-center">
                       <div>
                         <Image
@@ -185,7 +185,7 @@ export default function RegisterScreen3() {
                       </div>
                     </div>
                   </div>
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center w-[90%] mx-auto justify-between">
                     <div className="mt-4 flex items-center">
                       <div>
                         <Image
@@ -225,6 +225,13 @@ export default function RegisterScreen3() {
             </Link>
           </div>
         </div>
+      </div>
+
+      <div className="mx-auto">
+        <Link href='/RegisterScreen4'>
+
+        <p className="underline text-center mt-8 cursor-pointer">skip</p>
+        </Link>
       </div>
     </div>
   );
