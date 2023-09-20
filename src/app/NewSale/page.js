@@ -2,6 +2,7 @@
 import React from 'react'
 import NewCart from '../Components/newSaleComponents/NewCart'
 import Newsearchbar from '../Components/newSaleComponents/NewSaleCenter'
+import withPageLayout from '../hoc/withPageLayout'
 
 const NewSale = () => {
   return (
@@ -14,4 +15,4 @@ const NewSale = () => {
     </div>
   )
 }
-export default NewSale
+export default withPageLayout(NewSale)

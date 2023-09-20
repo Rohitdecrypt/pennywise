@@ -57,7 +57,7 @@ const Retailboard = () => {
                       className="text-[28px] w-[30px] cursor-pointer"
                     />
                     <Link
-                       href="/hello"
+                       href="/StockLabel"
                       style={{ display: IsOpen ? "block" : "none" }}
                       className="text-[14px] font-normal"
                     >
@@ -124,7 +124,7 @@ const Retailboard = () => {
                       className="text-[28px] w-[30px] cursor-pointer "
                     />
                     <Link
-                       href="/hello"
+                       href="/Refunds"
                       style={{ display: IsOpen ? "block" : "none" }}
                       className="text-[14px] font-normal"
                     >
@@ -137,7 +137,7 @@ const Retailboard = () => {
                       className="text-[28px] w-[30px] cursor-pointer"
                     />
                     <Link
-                       href="/hello"
+                       href="/StockEnquiry"
                       style={{ display: IsOpen ? "block" : "none" }}
                       className="text-[14px] font-normal"
                     >
