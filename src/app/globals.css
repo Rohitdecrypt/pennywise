@@ -21,10 +21,14 @@
    @apply font-bold
  }
  h1{
-   @apply  sm:text-2xl md:text-4xl 
+   @apply  sm:text-2xl  
  }
 h2{
-   @apply text-3xl sm:text-4xl
+   @apply text-xl
+   }
+
+ h3{
+  @apply text-lg 
  }
 
  li{
@@ -36,6 +40,49 @@ h2{
  } */
 }
 body {
+  /* display: flex; */
   color: #369EA4;
   background: #ffffff;
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+   
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #b4b3b3;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #7e7d7d;
+  }
+
+  .MuiOutlinedInput-input{
+    height: 0.8em !important;
+   
+  }
+  .MuiOutlinedInput-root{
+    border-radius: 25px;
+
+  }
+ 
+  .MuiTextField-root{
+    min-width: 120px;
+    max-width: 140px;
+  }
 }
+
+
+
+
+
+
+
+
+
