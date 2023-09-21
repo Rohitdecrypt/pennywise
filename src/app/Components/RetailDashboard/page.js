@@ -71,7 +71,7 @@ const Retailboard = () => {
                     />
 
                     <Link
-                       href="/hello"
+                       href="/BatchStock"
                       style={{ display: IsOpen ? "block" : "none" }}
                       className="text-[14px] font-normal"
                     >
@@ -84,7 +84,7 @@ const Retailboard = () => {
                       className="text-[28px] w-[30px] cursor-pointer"
                     />
                     <Link
-                       href="/hello"
+                       href="/StockTransfer"
                       style={{ display: IsOpen ? "block" : "none" }}
                       className="text-[14px] font-normal"
                     >
@@ -98,7 +98,7 @@ const Retailboard = () => {
                     />
 
                     <Link
-                       href="/hello"
+                       href="/Repairs"
                       style={{ display: IsOpen ? "block" : "none" }}
                       className="text-[14px] font-normal"
                     >
@@ -150,7 +150,7 @@ const Retailboard = () => {
                       className="text-[28px] w-[30px] cursor-pointer"
                     />
                     <Link
-                       href="/hello"
+                       href="/NewStockPurchase"
                       style={{ display: IsOpen ? "block" : "none" }}
                       className="text-[14px] font-normal"
                     >

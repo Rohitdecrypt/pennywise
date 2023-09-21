@@ -26,7 +26,7 @@ const RefundCancellation = () => {
                         <Image src={Hash2}  width={34} height={34} alt='/' className='cursor-pointer'/>
                         </div>
                     </div>
-                    <div className='flex h-[800px] justify-between p-6'>
+                    <div className='flex h-[800px] justify-between mt-10'>
                         <div className='refunds h-full me-5'>
 
                             <div className='refunds_Details border border-[#000000] rounded-2xl max-w-[499px] h-full flex justify-between flex-col'>
@@ -78,7 +78,7 @@ const RefundCancellation = () => {
                                 </div>
 
                             </div>
-                            <button className='border-2 border-[#000000] rounded-[4px] text-[16px] font-[500] mt-4 w-[206px] h-[48px]'>Layby Cancellations</button>
+                            <button className='border border-[#000000] rounded-[4px] text-[16px] font-[500] mt-4 w-[206px] h-[48px]'>Layby Cancellations</button>
                         </div>
 
                         <div className=''>
