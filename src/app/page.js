@@ -1,8 +1,8 @@
 // Page.js
 import React from "react";
 import RegisterScreen1 from "./RegisterScreen1/page";
-import Webstore from "./Webstore/Page";
-import Retailboard from "./Components/RetailDashboard/Page";
+import Webstore from "./Webstore/page";
+import Retailboard from "./Components/RetailDashboard/page";
 
 export default function Home({ children }) {
   return (

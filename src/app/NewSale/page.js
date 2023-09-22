@@ -4,6 +4,8 @@ import WithPageLayout from '../hoc/WithPageLayout'
 import Newsearchbar from '../Components/newSaleComponents/NewSaleCenter'
 import NewCart from '../Components/newSaleComponents/NewCart'
 
+
+
 const NewSale = () => {
   return (
     <div className='flex w-full'>
