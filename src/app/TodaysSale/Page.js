@@ -8,7 +8,7 @@ import { BsCheck2 } from 'react-icons/bs';
 import {RxCross2} from 'react-icons/rx'
 // import Delete from '../assets/delete_img.png';
 import Image from 'next/image';
-import withPageLayout from '../hoc/withPageLayout';
+import WithPageLayout from '../hoc/WithPageLayout';
 const Todaysale=()=> {
     const [popup, setPopup] = useState(false);
     return (
@@ -279,4 +279,4 @@ const Todaysale=()=> {
 
     )
 }
-export default withPageLayout(Todaysale)
+export default WithPageLayout(Todaysale)

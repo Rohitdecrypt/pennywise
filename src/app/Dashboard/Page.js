@@ -25,7 +25,7 @@ import Link from "next/link";
 import Image from "next/image";
 import SideUser from "../Components/SideUser/page";
 
-export default function () {
+const Page =()=> {
   const [isOpen, setIsOpen] = useState();
   const toggle = () => setIsOpen(!isOpen);
   const [sidebar, setSidebar] = useState(true);
@@ -290,3 +290,4 @@ export default function () {
     </div>
   );
 }
+export default Page

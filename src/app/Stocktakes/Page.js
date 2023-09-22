@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import withPageLayout from "../hoc/withPageLayout";
+import WithPageLayout from "../hoc/WithPageLayout";
 import Image from "next/image";
 import search from "../assets/search.png";
 import { PiPencil, PiBookOpenText } from "react-icons/pi";
@@ -10,7 +10,7 @@ import updown from "../assets/updown.png";
 import { RxCross2 } from "react-icons/rx";
 import Link from "next/link";
 
-const stocktakes = () => {
+const Stocktakes = () => {
   const [isChecked, setIsChecked] = useState(false);
   const [sideOpen, setsideOpen] = useState(false);
 
@@ -253,4 +253,4 @@ const stocktakes = () => {
   );
 };
 
-export default withPageLayout(stocktakes);
+export default WithPageLayout(Stocktakes);

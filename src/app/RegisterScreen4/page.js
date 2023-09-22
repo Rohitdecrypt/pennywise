@@ -8,7 +8,7 @@ import Link from "next/link";
 import left from "../assets/leftarrow.png";
 import success from "../assets/sucess.png"
 
-export default function page() {
+export default function Page() {
 
   return (
     <div>

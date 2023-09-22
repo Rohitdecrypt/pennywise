@@ -1,36 +1,144 @@
 "use client"
-import React from "react";
-import search from "../assets/search.png";
 import Image from "next/image";
-import { PiPencil } from "react-icons/pi";
-import withPageLayout from "../hoc/withPageLayout";
+import React, { useState } from "react";
+import Hash2 from "../../assets/pencillll.png";
+import Search from "../../assets/search.png";
+import {AiOutlinePlus} from 'react-icons/ai'
+import {RxCross2} from 'react-icons/rx'
+import Link from "next/link";
 
-const Webstore = () => {
+
+const Page = () => {
+  const [selectedRadio, setSelectedRadio] = useState("")
+
   return (
-    <>
-    
-        <div className="pr-5 w-full ">
-          <div className="flex mt-5 w-full items-center">
-            <div className="text-center text-[#000000] font-bold">
-              WEBSTORE FUNCTIONS
-            </div>
-            <div className="border-t w-[80%] mx-auto"></div>
-          </div>
-          <div className="relative">
+    <div className="w-full p-6">
+     
+      <div className="flex w-full justify-between items-center px-5 ">
+        <p className="font-bold text-[20px] text-black">
+          New Repair
+        </p>
+        <div className=" w-[88%] h-[1px] bg-[#BFBFBF] "></div>
+        <div>
+          <Image
+            src={Hash2}
+            width={34}
+            height={34}
+            alt="/"
+            className="cursor-pointer"
+          />
+        </div>
+      </div>
+
+      <div className="w-full flex mt-8">
+        <div className="w-full ">
+            <div className="min-w-[60%]   max-w-[62%] ml-5">
+            <label class="relative block w-full">
+              <span class="sr-only">Search</span>
+              <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                <Image
+                  alt="/"
+                  src={Search}
+                  className="pl-2 w-[24px] h-[18px]"
+                />
+              </span>
+              <input
+                class="w-full flex-1 placeholder:text-[14px]  placeholder:font-[400] block placeholder:text-[#369EA4] border 
+                    border-[#369EA4] rounded-full py-2 pl-12 pr-3 "
+                placeholder="Customer"
+                type="text"
+                name="search"
+              />
+            </label>
+            <label className="flex ml-8 mt-6" htmlFor="Internal">
             <input
-              className="border border-custom-border-green rounded-full w-[40%] py-2 mt-5 px-12 text-custom leading-tight focus:outline-none focus:shadow-outline text-md placeholder-[#369EA4]"
-              id="username"
-              type="text"
-              placeholder="Search"
+              type="radio"
+              className="hidden"
+              id="Internal"
+              name="Repairer"
             />
-            <Image
-              src={search}
-              alt="Profile Image"
-              className=" absolute w-5 bottom-2 left-4"
+            <div
+              className="w-[14px] h-[14px] mt-[5px] me-3 border cursor-pointer border-[#6750A4] rounded-full flex items-center justify-center transition-all duration-300"
+              id="Internal"
+              onClick={(e) => {
+                setSelectedRadio(e.target.id)
+                // setIsChecked(true);
+              }}
+            >
+              {selectedRadio === "Internal" && (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 20 20"
+                >
+                  <circle cx="10" cy="10" r="5" fill="#6750A4" />
+                </svg>
+              )}
+            </div>
+            <div className="text-black">
+            Internal Repairer
+            </div>
+          </label>
+          <label className="flex mt-2 ml-8" htmlFor="External">
+            <input
+              type="radio"
+              className="hidden"
+              id="External"
+              name="Repairer"
             />
-          </div>
-          <div className="mt-10 border border-black rounded-2xl py-3 px-2 overflow-x-auto">
-            <div className="  px-10 overflow-x-auto overflow-y-auto max-h-[700px] ">
+            <div
+              className="w-[14px] h-[14px] mt-[5px] me-3 border cursor-pointer border-[#6750A4] rounded-full flex items-center justify-center transition-all duration-300"
+              id="External"
+              onClick={(e) => {
+                setSelectedRadio(e.target.id)
+                // setIsChecked(true);
+              }}
+            >
+              {selectedRadio === "External" && (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 20 20"
+                >
+                  <circle cx="10" cy="10" r="5" fill="#6750A4" />
+                </svg>
+              )}
+            </div>
+            <div className="text-black">
+             External Repairer
+              
+            </div>
+          </label>
+          <label class="relative block mt-6 w-full">
+              <span class="sr-only">Search</span>
+              <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                <Image
+                  alt="/"
+                  src={Search}
+                  className="pl-2 w-[24px] h-[18px]"
+                />
+              </span>
+              <input
+                class="w-full flex-1 placeholder:text-[14px]  placeholder:font-[400] block placeholder:text-[#369EA4] border 
+                    border-[#369EA4] rounded-full py-2 pl-12 pr-3 "
+                placeholder="Repairer Name"
+                type="text"
+                name="search"
+              />
+            </label>
+            </div>
+        </div>
+        <div className="w-full  flex justify-end" >
+        <div className="min-w-[60%]   max-w-[62%] mr-5">
+            <textarea placeholder="Sales Comments" className="w-full h-[320px] rounded-md p-2 border border-black" />
+        </div>
+        </div>
+      </div>
+
+        <div className="mt-10 border border-black rounded-2xl py-3 px-2 overflow-x-auto">
+            <div className="  px-10 overflow-x-auto overflow-y-auto max-h-[400px] ">
               <table className=" min-w-full text-[#000000] ">
                 <thead className="sticky top-0 bg-[#fff] py-2">
                   <tr className="border-b border-[#BFBFBF]  text-sm">
@@ -38,10 +146,10 @@ const Webstore = () => {
                       Stock No.
                     </th>
                     <th className="w-[30%]  text-start py-3 font-normal">
-                      Item Description
+                      Description
                     </th>
                     <th className="text-start py-3 font-normal">
-                      Webstore Item URL
+                      Item fault
                     </th>
                   </tr>
                 </thead>
@@ -194,18 +302,35 @@ const Webstore = () => {
               </table>
             </div>
           </div>
+
           <div className="flex justify-between mt-5">
-            <div className="w-[155px] h-[48px] border-black border rounded-md flex items-center justify-center text-[#000000]">
-              <PiPencil size={25} /> <span className="pl-3">Edit Items</span>
+    <div className='flex'>
+
+
+<div className="w-[155px] h-[48px] border-black border rounded-md bg-[#000] flex items-center justify-center text-[#fff] me-2">
+              <AiOutlinePlus size={25} /> <span className="pl-3">Add</span>
             </div>
+            <div className="w-[155px] h-[48px] border-black border rounded-md bg-[#fff] flex items-center justify-center text-[#000] me-2">
+            <RxCross2 size={25} /> <span className="pl-3">Remove</span>
+            </div>
+    </div>
+    <div className='flex'>
+
+   
+            
+<Link href='/Repairs'>
+<div className="w-[155px] h-[48px] border-black border rounded-md bg-[#fff] flex items-center justify-center text-[#000] me-2">
+              Close
+            </div>
+</Link>
             <div className="w-[155px] h-[48px] border-black border rounded-md bg-[#000] flex items-center justify-center text-[#fff]">
-              Stock Details
+            Save
             </div>
+           
+    </div>
           </div>
-        </div>
-
-    </>
+    </div>
   );
-}
+};
 
-export default withPageLayout(Webstore)
+export default Page;

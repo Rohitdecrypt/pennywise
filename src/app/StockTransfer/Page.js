@@ -4,9 +4,9 @@ import search from "../assets/search.png";
 import Image from "next/image";
 import { PiPencil } from "react-icons/pi";
 import updown from "../assets/updown.png";
-import withPageLayout from "../hoc/withPageLayout";
+import WithPageLayout from "../hoc/WithPageLayout";
 
-const page = () => {
+const Page = () => {
     const [International, setInternational] = useState(true);
   return (
     <>
@@ -292,4 +292,4 @@ const page = () => {
   );
 }
 
-export default withPageLayout(page)
+export default WithPageLayout(Page)

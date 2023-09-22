@@ -10,7 +10,7 @@ import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { StatefulPinInput } from "react-input-pin-code";
 import blackman from "../assets/blackman.png"
-import withPageLayout from "../hoc/withPageLayout";
+import WithPageLayout from "../hoc/WithPageLayout";
 
 
 
@@ -20,7 +20,7 @@ const StoreCredit = () => {
   const [International, setInternational] = useState(true);
   const [radioLoan, setRadioLoan] = useState(false);
   const [radioBuy, setRadioBuy] = useState(false);
-  console.log("inside store page")
+  console.log("inside store Page")
 
   return (
     <>
@@ -325,4 +325,4 @@ const StoreCredit = () => {
   );
 }
 
-export default withPageLayout(StoreCredit)
+export default WithPageLayout(StoreCredit)
