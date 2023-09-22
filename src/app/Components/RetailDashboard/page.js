@@ -111,7 +111,7 @@ const Retailboard = () => {
                       className="text-[28px] w-[30px] cursor-pointer"
                     />
                     <Link
-                       href="/hello"
+                       href="/TodaysSale"
                       style={{ display: IsOpen ? "block" : "none" }}
                       className="text-[14px] font-normal"
                     >
