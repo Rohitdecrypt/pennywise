@@ -5,7 +5,7 @@ import Hash2 from '../assets/hash.png'
 import { BiSolidDownArrow, BiSolidUpArrow } from "react-icons/bi";
 import { RxCross1 } from 'react-icons/rx';
 import Image from 'next/image';
-import withPageLayout from '../hoc/withPageLayout';
+import WithPageLayout from '../hoc/WithPageLayout';
 import Link from 'next/link';
 const RefundCancellation = () => {
     const [modal, setModal] = useState(false);
@@ -266,4 +266,4 @@ const RefundCancellation = () => {
     )
 }
 
-export default withPageLayout(RefundCancellation)
+export default WithPageLayout(RefundCancellation)

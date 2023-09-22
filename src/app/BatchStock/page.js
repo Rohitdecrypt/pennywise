@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import withPageLayout from "../hoc/withPageLayout";
+import WithPageLayout from "../hoc/WithPageLayout";
 import Image from "next/image";
 import search from "../assets/search.png";
 import { PiPencil, PiBookOpenText } from "react-icons/pi";
@@ -10,7 +10,7 @@ import updown from "../assets/updown.png";
 import { RxCross2 } from "react-icons/rx";
 import Link from "next/link";
 
-const page = () => {
+const Page = () => {
   const [isChecked, setIsChecked] = useState(false);
   const [selectedRadio, setSelectedRadio] = useState("")
 
@@ -396,4 +396,4 @@ const page = () => {
   );
 };
 
-export default withPageLayout(page);
+export default WithPageLayout(Page);

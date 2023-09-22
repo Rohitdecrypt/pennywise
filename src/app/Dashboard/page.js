@@ -10,7 +10,7 @@ import Vector from "../assets/Vector.png";
 import { BiMenu } from "react-icons/bi";
 import { BiUserCircle, BiCreditCard } from "react-icons/bi";
 import { PiFoldersFill } from "react-icons/pi";
-import Searchbar from "../Components/DashSearchBar/page";
+
 
 import {
   PiCalculatorFill,
@@ -24,8 +24,9 @@ import { MdOutlineLocalPolice } from "react-icons/md";
 import Link from "next/link";
 import Image from "next/image";
 import SideUser from "../Components/SideUser/page";
+import Searchbar from "../Components/DashSearchBar/page";
 
-export default function () {
+const Page =()=> {
   const [isOpen, setIsOpen] = useState();
   const toggle = () => setIsOpen(!isOpen);
   const [sidebar, setSidebar] = useState(true);
@@ -290,3 +291,4 @@ export default function () {
     </div>
   );
 }
+export default Page

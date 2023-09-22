@@ -18,7 +18,7 @@ function Searchbar() {
         <div className=" relative w-full max-w-[600px]">
           <input
             type="email"
-            className="form-control border-[#369EA4] border-[2px] rounded-full placeholder-[#369EA4] pl-[34px] ps-4 flex-1 max-w-[600px] w-full"
+            className="form-control border-[#369EA4] border-[2px] rounded-full placeholder-[#369EA4] pl-[33px] ps-4 flex-1 max-w-[600px] w-full"
             id="exampleFormControlInput1"
             placeholder="Search"
           />

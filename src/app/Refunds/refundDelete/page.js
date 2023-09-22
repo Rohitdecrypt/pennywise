@@ -7,7 +7,7 @@ import deleteimg from '../../assets/delete.png'
 import hash from '../../assets/hash.png'
 import deleteColor from '../../assets/clrdel.png'
 import Image from 'next/image';
-import withPageLayout from '@/app/hoc/withPageLayout';
+import WithPageLayout from '@/app/hoc/WithPageLayout';
 const Poprefund = () => {
     const [modal, setModal] = useState(false);
    
@@ -146,4 +146,4 @@ const Poprefund = () => {
   )
 }
 
-export default withPageLayout(Poprefund)
+export default WithPageLayout(Poprefund)

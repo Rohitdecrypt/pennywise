@@ -5,7 +5,7 @@ import Delete from '../assets/delete.png'
 
 import { BiSolidDownArrow, BiSolidUpArrow } from "react-icons/bi";
 import { RxCross1 } from 'react-icons/rx';
-import withPageLayout from '../hoc/withPageLayout';
+import WithPageLayout from '../hoc/WithPageLayout';
 import Image from 'next/image';
 import Link from 'next/link';
 const NewStockStep1 = () => {
@@ -178,4 +178,4 @@ const NewStockStep1 = () => {
     )
 }
 
-export default withPageLayout(NewStockStep1)
+export default WithPageLayout(NewStockStep1)

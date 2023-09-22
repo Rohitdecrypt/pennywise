@@ -1,8 +1,10 @@
 "use client"
 import React from 'react'
-import NewCart from '../Components/newSaleComponents/NewCart'
+import WithPageLayout from '../hoc/WithPageLayout'
 import Newsearchbar from '../Components/newSaleComponents/NewSaleCenter'
-import withPageLayout from '../hoc/withPageLayout'
+import NewCart from '../Components/newSaleComponents/NewCart'
+
+
 
 const NewSale = () => {
   return (
@@ -15,4 +17,4 @@ const NewSale = () => {
     </div>
   )
 }
-export default withPageLayout(NewSale)
+export default WithPageLayout(NewSale)

@@ -8,7 +8,7 @@ import {RxCross2} from 'react-icons/rx'
 import Link from "next/link";
 
 
-const page = () => {
+const Page = () => {
   const [selectedRadio, setSelectedRadio] = useState("")
 
   return (
@@ -333,4 +333,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

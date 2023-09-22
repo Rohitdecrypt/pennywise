@@ -8,7 +8,7 @@ import Link from "next/link";
 import left from "../assets/leftarrow.png";
 import success from "../assets/sucess.png"
 
-export default function page() {
+export default function Page() {
 
   return (
     <div>
@@ -19,7 +19,7 @@ export default function page() {
         <div className="container mx-auto max-w-[1140px] relative">
           <div className="h-[3rem]  w-[64%] mx-auto  flex items-center">
             <div className="h-[5px] border w-[100%] mx-auto ">
-              <div className="h-[3px] w-[66.66%] bg-[#369EA4]"></div>
+              <div className="h-[3px] w-[99.99%] bg-[#369EA4]"></div>
             </div>
             <div className="absolute w-[65%] left-[17.5%]">
               <div className="icons  flex justify-between">

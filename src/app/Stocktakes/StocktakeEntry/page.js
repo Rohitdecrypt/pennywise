@@ -10,7 +10,7 @@ import updown from "../../assets/updown.png";
 import { RxCross2 } from "react-icons/rx";
 import Link from "next/link";
 
-const page = () => {
+const Page = () => {
   const [isChecked, setIsChecked] = useState(false);
   const [sideOpen, setsideOpen] = useState(false);
 
@@ -311,4 +311,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

@@ -2,7 +2,7 @@
 
 "use client";
 import React, { useState } from "react";
-import withPageLayout from "../hoc/withPageLayout";
+import WithPageLayout from "../hoc/WithPageLayout";
 import Image from "next/image";
 import search from "../assets/search.png";
 import { PiPencil, PiBookOpenText } from "react-icons/pi";
@@ -134,4 +134,4 @@ const Label = () => {
   )
 }
 
-export default withPageLayout(Label)
+export default WithPageLayout(Label)

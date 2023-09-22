@@ -3,7 +3,7 @@ import React from "react";
 import search from "../assets/search.png";
 import Image from "next/image";
 import { PiPencil } from "react-icons/pi";
-import withPageLayout from "../hoc/withPageLayout";
+import WithPageLayout from "../hoc/WithPageLayout";
 
 const Webstore = () => {
   return (
@@ -208,4 +208,4 @@ const Webstore = () => {
   );
 }
 
-export default withPageLayout(Webstore)
+export default WithPageLayout(Webstore)

@@ -1,10 +1,11 @@
+"use client";
 import React from "react";
 import Check from "../assets/check.png";
 import Search from "../assets/search.png";
 import { BiSolidUpArrow, BiSolidDownArrow } from "react-icons/bi";
 import { BsCheck2 } from "react-icons/bs";
 import Image from "next/image";
-import withPageLayout from "../hoc/withPageLayout";
+import WithPageLayout from "../hoc/WithPageLayout";
 const Stockenquiry = () => {
   return (
    
@@ -171,4 +172,4 @@ const Stockenquiry = () => {
 
   );
 }
-export default withPageLayout(Stockenquiry)
+export default WithPageLayout(Stockenquiry)

@@ -1,4 +1,4 @@
-// page.js
+// Page.js
 import React from "react";
 import RegisterScreen1 from "./RegisterScreen1/page";
 import Webstore from "./Webstore/page";

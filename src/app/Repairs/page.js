@@ -1,17 +1,15 @@
+"use client";
 import Image from 'next/image'
 import React from 'react'
 import search from "../assets/search.png";
-import withPageLayout from '../hoc/withPageLayout';
+import WithPageLayout from '../hoc/WithPageLayout';
 import updown from "../assets/updown.png";
 import {AiOutlineReload} from 'react-icons/ai'
 import {RxCross2} from 'react-icons/rx'
 import {MdDone} from 'react-icons/md'
 import Link from 'next/link';
 
-
-
-
-const page = () => {
+const Page = () => {
   return (
    
           <div className="pr-5 w-full ">
@@ -186,4 +184,4 @@ const page = () => {
   )
 }
 
-export default withPageLayout(page)
+export default WithPageLayout(Page)
