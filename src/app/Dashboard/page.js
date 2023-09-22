@@ -78,7 +78,7 @@ export default function () {
                     />
                     {/* <Image alt="/" src={CreditCard} className="img-fluid w-[24px]" style={{ margin: isOpen ? "0" : "auto" }} /> */}
                     <Link
-                      href="//"
+                      href="/NewSale"
                       style={{ display: isOpen ? "block" : "none" }}
                       className="text-[14px] font-normal"
                     >

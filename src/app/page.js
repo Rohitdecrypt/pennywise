@@ -7,7 +7,7 @@ import Retailboard from "./Components/RetailDashboard/page";
 export default function Home({ children }) {
   return (
     <main>
-      <Retailboard />
+      <RegisterScreen1 />
       {children}
     </main>
   );

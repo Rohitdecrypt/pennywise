@@ -43,39 +43,39 @@ body {
   /* display: flex; */
   color: #369EA4;
   background: #ffffff;
-  ::-webkit-scrollbar {
-    width: 4px;
-  }
-  
-  
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 10px;
-   
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: #b4b3b3;
-    border-radius: 10px;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: #7e7d7d;
-  }
+}
+::-webkit-scrollbar {
+  width: 4px;
+}
 
-  .MuiOutlinedInput-input{
-    height: 0.8em !important;
-   
-  }
-  .MuiOutlinedInput-root{
-    border-radius: 25px;
 
-  }
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
  
-  .MuiTextField-root{
-    min-width: 120px;
-    max-width: 140px;
-  }
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b4b3b3;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7e7d7d;
+}
+
+.MuiOutlinedInput-input{
+  height: 0.8em !important;
+ 
+}
+.MuiOutlinedInput-root{
+  border-radius: 25px;
+
+}
+
+.MuiTextField-root{
+  min-width: 120px;
+  max-width: 140px;
 }
 
 

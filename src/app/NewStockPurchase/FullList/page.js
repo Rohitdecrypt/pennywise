@@ -4,11 +4,10 @@ import React ,{useState}from 'react'
 
 import { BiSolidDownArrow, BiSolidUpArrow } from "react-icons/bi";
 import deleteimg from '../../assets/delete.png'
-import hash from '../../assets/hash.png'
+
 import deleteColor from '../../assets/clrdel.png'
 import Image from 'next/image';
-import withPageLayout from '@/app/hoc/withPageLayout';
-const Poprefund = () => {
+const NewStockStep2 = () => {
     const [modal, setModal] = useState(false);
    
   return (
@@ -17,17 +16,17 @@ const Poprefund = () => {
         <div className={`p-3 w-full ${modal == true ? "blur-sm" : ""}`}>
         <div className='flex justify-around items-center px-5'>
            <div className=''>
-           <p className='font-bold text-[20px]' >REFUNDS & CANCELLATIONS</p>
+           <p className='font-bold text-[20px]' >NEW STOCK PURCHASE</p>
            </div>
-            <div className=' w-[78%] h-[1px] bg-[#BFBFBF] flex-1 mx-3'></div>
+            <div className=' w-[78%] h-1 bg-[#BFBFBF] flex-1 mx-3'></div>
             <div className='flex'>
             <Image src={deleteimg} className='w-[40px] h-[40px] me-2' alt='/'/> 
-            <Image src={hash} className='w-[40px] h-[40px]' alt='/'/> 
+          
             </div>
         </div>
         <div className="mt-10 border border-black rounded-2xl py-3 px-2">
             <div className="px-10 overflow-x-auto overflow-y-auto max-h-[300px]">
-            <table className=" min-w-full text-[#000000] ">
+              <table className=" min-w-full text-[#000000] ">
                 <thead className="sticky top-0 bg-[#fff] py-2">
                   <tr className="border-b border-[#BFBFBF]  text-sm">
                     <th className="  text-start py-3 font-normal min-w-[110px]">
@@ -93,7 +92,7 @@ const Poprefund = () => {
         onClick={() => {
           setModal(true);
         }}
-        >Delete</button>
+        >Save</button>
         
         </div>
           
@@ -103,7 +102,7 @@ const Poprefund = () => {
             <div className="modal-body w-[422px] bg-[#fff]  relative  blur-none text-black">
                    
              <div className='bg-[#F53648] w-full relative min-h-[100px] flex justify-center items-center rounded-t-xl'>
-                <Image src={deleteColor} className=' absolute -top-10 w-[77px] h-[77px]'/>
+                <Image src={deleteColor} className='w-auto absolute -top-10 '/>
                 <h1 className='font-bold text-[20px] text-[#FFFFFF] mt-8'>Delete Items?</h1>
              </div>
 
@@ -134,16 +133,8 @@ const Poprefund = () => {
         )}
       </div>
   
-
-
-                                            
-
-
-
-
-
   </>
   )
 }
 
-export default withPageLayout(Poprefund)
+export default NewStockStep2
