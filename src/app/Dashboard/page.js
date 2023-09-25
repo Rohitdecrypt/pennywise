@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { AiOutlineRight } from "react-icons/ai";
 import logo from "../assets/PW_Logo.png";
-import Pawan from "../assets/My Pawn Icon Logo 1.png";
+import Pawan from "../assets/MyPawnIconLogo1.png";
 import shose from "../assets/shose1.jpg";
 import arrow from "../assets/arrow.jpg";
 import settings from "../assets/settings.jpg";

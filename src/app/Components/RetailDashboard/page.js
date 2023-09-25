@@ -14,7 +14,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineRight, AiOutlineLeft } from "react-icons/ai";
 import shose from "../../assets/shose1.jpg";
-import Pawan from "../../assets/My Pawn Icon Logo 1.png";
+import Pawan from "../../assets/MyPawnIconLogo1.png";
 import arrow from "../../assets/arrow.jpg";
 import settings from "../../assets/settings.jpg";
 import Vector from "../../assets/Vector.png";
