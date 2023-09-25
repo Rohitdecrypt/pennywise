@@ -1,4 +1,4 @@
-"use client"
+
 import React, { useState } from 'react';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { GoHash } from 'react-icons/go';

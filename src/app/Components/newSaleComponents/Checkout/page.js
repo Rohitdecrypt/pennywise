@@ -2,7 +2,7 @@ import React from 'react'
 import Cart from './checkComponents/Cart'
 import CheckMain from './checkComponents/CheckMain'
 
-const Page = () => {
+const page = () => {
   return (
     <div className='flex'>
       <CheckMain/>
@@ -10,4 +10,4 @@ const Page = () => {
       </div>
   )
 }
-export default Page
+export default page

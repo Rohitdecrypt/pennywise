@@ -2,6 +2,7 @@ import React from 'react'
 import cart from '../../../../assets/CartUser.jpg'
 import cross from "../../../../assets/cross.png"
 import Image from 'next/image'
+import Link from 'next/link'
 const Cart = () => {
     return (
         <>
@@ -38,7 +39,9 @@ const Cart = () => {
                             <div className="border-dashed border-2 border-black"></div>
                             <div className='flex justify-between mt-10 mb-5 flex-wrap'>
                                 <button className='py-[10px] px-[44px] bg-[#ffffff] text-[#000000] border-2 border-[#000000] rounded-md'>Cancel</button>
-                                <button className='py-[10px] px-[39px] bg-black text-[#ffff] rounded-md'>Complete</button>
+                                <Link href='/Components/newSaleComponents/Checkout/checkComponents'>
+                                <button className='py-[10px] px-[39px] bg-black text-[#ffff] rounded-md'>Complete</button> 
+                                    </Link>
                             </div>
                         </div>
 </div>

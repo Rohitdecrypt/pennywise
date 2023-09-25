@@ -9,7 +9,7 @@ import { AiOutlineReload } from "react-icons/ai";
 import updown from "../assets/updown.png";
 import { RxCross2 } from "react-icons/rx";
 import Link from "next/link";
-
+ 
 const Page = () => {
   const [isChecked, setIsChecked] = useState(false);
   const [selectedRadio, setSelectedRadio] = useState("")
