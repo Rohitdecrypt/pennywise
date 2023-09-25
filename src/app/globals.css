@@ -78,6 +78,37 @@ body {
   max-width: 140px;
 }
 
+.sales input[type="checkbox"]{
+  appearance: none;
+  -webkit-appearance: none;
+  height: 17px;
+  width: 17px;
+  background-color: white;
+ border: 1px solid #A1D2D5;
+ position: relative;
+ cursor: pointer;
+
+ /* margin-top: 10px; */
+}
+.sales input[type="checkbox"]:checked{
+
+  width: 17px;
+  height: 17px;
+  background-image: url("./assets/check.png"); 
+  background-size: cover; 
+  background-color: #ffffff;
+  background-position: 2px -2px;
+
+  top: -10px;
+  left: 0px;
+  background-repeat: no-repeat;
+overflow: visible;
+  cursor: pointer;
+}
+.newsold{
+  background-image: url("./assets/soldtobg.png");
+  background-size: 100% 100%;
+}
 
 
 

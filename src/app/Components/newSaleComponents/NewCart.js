@@ -1,11 +1,12 @@
-"use client"
 import React, { useState } from 'react';
 import { AiFillMinusCircle, AiFillPlusCircle } from 'react-icons/ai';
+
 import cart from '../../assets/CartUser.jpg'
 import Vector from "../../assets/vectorgroup.png"
 import Pen from "../../assets/Pen.png"
 import Image from 'next/image';
 import Link from 'next/link';
+
 const NewCart = () => {
 
     const [count, setCount] = useState(0)
