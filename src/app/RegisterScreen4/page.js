@@ -1,8 +1,7 @@
 "use client"
 import React, { useRef, useState } from "react";
 import house from "../assets/Vectorhouse.png";
-import tickIcon from "../assets/FAB _ RegularTick.png";
-import msgIcon from "../assets/FAB _ Regularmsg.png";
+import tickIcon from "../assets/FAB_RegularTick.png";
 import Image from "next/image";
 import Link from "next/link";
 import left from "../assets/leftarrow.png";

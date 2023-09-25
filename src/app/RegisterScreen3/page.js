@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
 import house from "../assets/Vectorhouse.png";
-import tickIcon from "../assets/FAB _ RegularTick.png";
+import tickIcon from "../assets/FAB_RegularTick.png";
 import left from "../assets/leftarrow.png";
-import tableIcon from "../assets/FAB _ Regulartable.png";
-import msgIcon from "../assets/FAB _ Regularmsg.png";
+import tableIcon from "../assets/FAB_Regulartable.png";
+import msgIcon from "../assets/FAB_Regularmsg.png";
 import empty from "../assets/profile.png";
 import tick from "../assets/greentick.png";
 import Link from "next/link";
