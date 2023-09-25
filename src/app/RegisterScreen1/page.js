@@ -7,10 +7,10 @@ import dpIcon from "../assets/profileIcon.png";
 import changeIcon from "../assets/changeIcon.png";
 import nextArr from "../assets/leftarrow.png";
 import house from "../assets/Vectorhouse.png";
-import lineIcon from "../assets/FAB _ Regularline.png";
-import hutIcon from "../assets/FAB _ Regularhut.png";
-import tableIcon from "../assets/FAB _ Regulartable.png";
-import msgIcon from "../assets/FAB _ Regularmsg.png";
+import lineIcon from "../assets/FAB_Regularline.png";
+import hutIcon from "../assets/FAB_Regularhut.png";
+import tableIcon from "../assets/FAB_Regulartable.png";
+import msgIcon from "../assets/FAB_Regularmsg.png";
 import Link from "next/link";
 
 export default function RegisterScreen1() {

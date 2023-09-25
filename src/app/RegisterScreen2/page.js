@@ -6,10 +6,10 @@ import search from "../assets/search.png";
 import Image from "next/image";
 import Link from "next/link";
 import house from "../assets/Vectorhouse.png";
-import tickIcon from "../assets/FAB _ RegularTick.png";
-import hutIcon from "../assets/FAB _ Regularhut.png";
-import tableIcon from "../assets/FAB _ Regulartable.png";
-import msgIcon from "../assets/FAB _ Regularmsg.png";
+import tickIcon from "../assets/FAB_RegularTick.png";
+import hutIcon from "../assets/FAB_Regularhut.png";
+import tableIcon from "../assets/FAB_Regulartable.png";
+import msgIcon from "../assets/FAB_Regularmsg.png";
 
 export default function RegisterScreen2() {
   const [International, setInternational] = useState(true);
