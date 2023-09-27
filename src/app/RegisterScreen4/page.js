@@ -59,9 +59,9 @@ export default function Page() {
               />
             </Link>
           </div>
-          <div className="border shadow-md rounded-sm flex items-center justify-center flex-col lg:flex-row">
+          <div className="border-[0.5px] border-[#f0efef80] shadow-md rounded-sm flex items-center justify-center flex-col lg:flex-row">
             <div className="bg-[#369EA4] sm:p-8 p-3 ">
-              <div className="sm:p-4 p-2 bg-[#fff] h-[35rem]">
+              <div className="sm:p-4 p-2 bg-[#fff] h-[35rem] rounded-md">
                 <p className="text-3xl text-center mt-4 font-bold">SURVEY</p>
                 <p className="text-center">How did you hear about us?</p>
                 <div className="inline-block relative bg-custom-grey rounded-full mt-10 w-[260px] sm:w-[310px] py-3  focus:border-none focus:outline-none">
@@ -91,8 +91,8 @@ export default function Page() {
                 <Image src={success}  alt="/" className=""/>
 
                 </div>
-                <p className="text-3xl text-center mt-4 font-bold">Success</p>
-                <p className="text-center">How did you hear about us?</p>
+                <p className="text-3xl text-center mt-4 font-bold">SUCCESS</p>
+                <p className="text-center">New Customer Added</p>
             </div>
           </div>
           <div className="columns-3  flex ">

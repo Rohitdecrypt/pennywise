@@ -16,15 +16,18 @@ function Searchbar() {
     <div className=" Searchbar relative h-screen ms-2 w-full">
       <div className=" flex items-center  ">
         <div className=" relative w-full max-w-[600px]">
+          <div className="w-full">
+
           <input
             type="email"
-            className="form-control border-[#369EA4] border-[2px] rounded-full placeholder-[#369EA4] pl-[33px] ps-4 flex-1 max-w-[600px] w-full"
+            className="form-control border-[#369EA4] border-[2px] rounded-full placeholder-[#369EA4] pl-[34px] py-2 flex-1 max-w-[600px] w-full"
             id="exampleFormControlInput1"
             placeholder="Search"
           />
+          </div>
           <div className="absolute top-1/2 transform -translate-y-1/2 left-2.5  ">
             <AiOutlineSearch
-              style={{ fill: "#369EA4", width: "1em", height: "1em" }}
+              style={{ fill: "#369EA4", width: "1.2em", height: "1.2em" }}
               className=""
             />
           </div>
@@ -43,7 +46,7 @@ function Searchbar() {
             </label>
             <input
               type="text"
-              className=" bg-[#edeeee] h-8 mt-2 px-3 max-w-[136px] rounded-full"
+              className=" bg-[#f7f8f8] h-8 mt-2 px-3 max-w-[136px] rounded-full"
               id="type"
               placeholder=""
             />
@@ -54,7 +57,7 @@ function Searchbar() {
             </label>
             <input
               type="text"
-              className=" bg-[#edeeee] h-8 mt-2 px-3 max-w-[136px] rounded-full"
+              className=" bg-[#f7f8f8] h-8 mt-2 px-3 max-w-[136px] rounded-full"
               id="Time"
               placeholder=""
             />
@@ -65,7 +68,7 @@ function Searchbar() {
             </label>
             <input
               type="text"
-              className=" bg-[#edeeee] h-8 mt-2 px-3 max-w-[136px] rounded-full"
+              className=" bg-[#f7f8f8] h-8 mt-2 px-3 max-w-[136px] rounded-full"
               id="Amount"
               placeholder=""
             />
@@ -76,7 +79,7 @@ function Searchbar() {
             </label>
             <input
               type="text"
-              className=" bg-[#edeeee] h-8 mt-2 px-3 max-w-[136px] rounded-full"
+              className=" bg-[#f7f8f8] h-8 mt-2 px-3 max-w-[136px] rounded-full"
               id="Name"
               placeholder=""
             />
@@ -87,7 +90,7 @@ function Searchbar() {
             </label>
             <input
               type="text"
-              className=" bg-[#edeeee] h-8 mt-2 px-3 w-full rounded-full"
+              className=" bg-[#f7f8f8] h-8 mt-2 px-3 w-full rounded-full"
               id="Reference"
               placeholder=""
             />
@@ -120,7 +123,7 @@ function Searchbar() {
                 </label>
                 <input
                   type="text"
-                  className=" bg-[#edeeee] h-8 mt-2 px-3 max-w-[136px] rounded-full"
+                  className=" bg-[#edeeeea9] h-8 mt-2 px-3 max-w-[136px] rounded-full"
                   id="type"
                   placeholder=""
                 />
@@ -131,7 +134,7 @@ function Searchbar() {
                 </label>
                 <input
                   type="text"
-                  className=" bg-[#edeeee] h-8 mt-2 px-3 max-w-[136px] rounded-full"
+                  className=" bg-[#f7f8f8] h-8 mt-2 px-3 max-w-[136px] rounded-full"
                   id="Time"
                   placeholder=""
                 />
@@ -142,7 +145,7 @@ function Searchbar() {
                 </label>
                 <input
                   type="text"
-                  className=" bg-[#edeeee] h-8 mt-2 px-3 max-w-[136px] rounded-full"
+                  className=" bg-[#f7f8f8] h-8 mt-2 px-3 max-w-[136px] rounded-full"
                   id="Amount"
                   placeholder=""
                 />
@@ -153,7 +156,7 @@ function Searchbar() {
                 </label>
                 <input
                   type="text"
-                  className=" bg-[#edeeee] h-8 mt-2 px-3 w-full rounded-full"
+                  className=" bg-[#f7f8f8] h-8 mt-2 px-3 w-full rounded-full"
                   id="Name"
                   placeholder=""
                 />
@@ -168,7 +171,7 @@ function Searchbar() {
               </label>
               <input
                 type="text"
-                className=" bg-[#edeeee] h-8 mt-2 px-3 w-full rounded-full"
+                className=" bg-[#f7f8f8] h-8 mt-2 px-3 w-full rounded-full"
                 id="Reference"
                 placeholder=""
               />

@@ -64,8 +64,8 @@ export default function RegisterScreen2() {
                 <button
                   className={
                     International
-                      ? "bg-custom-green  text-white text-2xl py-3 px-12 sm:mb-0 mb-4"
-                      : "bg-custom-grey  text-custom-greenlight  text-2xl py-3 px-12 sm:mb-0 mb-4"
+                      ? "bg-custom-green  text-white text-2xl py-3  sm:mb-0 mb-4 w-[200px] rounded-tl-md rounded-bl-md"
+                      : "bg-custom-grey  text-custom-greenlight  text-2xl py-3  sm:mb-0 mb-4 w-[200px] rounded-tl-md rounded-bl-md"
                   }
                   onClick={() => {
                     setInternational(true);
@@ -76,8 +76,8 @@ export default function RegisterScreen2() {
                 <button
                   className={
                     International == false
-                      ? "bg-custom-green text-white text-2xl py-3 px-12"
-                      : "bg-custom-grey  text-custom-greenlight text-2xl py-3 px-12"
+                      ? "bg-custom-green text-white text-2xl py-3  w-[200px] rounded-tr-md rounded-br-md"
+                      : "bg-custom-grey  text-custom-greenlight text-2xl py-3  w-[200px] rounded-tr-md rounded-br-md"
                   }
                   onClick={() => {
                     setInternational(false);

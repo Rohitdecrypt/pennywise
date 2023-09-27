@@ -163,7 +163,7 @@ export default function RegisterScreen1() {
                       }}
                     />
                   </div>
-                  <p className="text-center mt-2">Change picture</p>
+                  <p className="text-center mt-2">Change Picture</p>
                 </div>
               </div>
             </div>

@@ -57,15 +57,15 @@ export default function RegisterScreen3() {
   
           </div>
           <div className=" shadow-md flex justify-center flex-col lg:flex-row items-center ">
-            <div className="w-auto bg-[#fff] pt-10 pb-10">
+            <div className="w-auto bg-[#fff] ">
               <div className="flex flex-col sm:flex-row items-center">
                 <div className="">
                   <div className="pl-5 pb-5">
                     <Image
-                      
+                      className="w-[220px] h-[320px]"
                       alt="/"
-                      width={200}
-                      height={200}
+                     width={220}
+                      height={320}
                       src={empty}
                     />
                   </div>
@@ -73,9 +73,9 @@ export default function RegisterScreen3() {
                 <div className="">
                   <div className="pl-5 pb-5 pr-5">
                     <Image
-                     
-                      width={200}
-                      height={200}
+                     className="w-[220px] h-[320px]"
+                     width={220}
+                      height={320}
                       alt="/"
                       src={empty}
                     />
@@ -86,9 +86,9 @@ export default function RegisterScreen3() {
                 <div className="">
                   <div className="pl-5 pb-5 ">
                     <Image
-                      className=" "
-                      width={200}
-                      height={200}
+                      className=" w-[220px] h-[320px] "
+                     width={220}
+                      height={320}
                       alt="/"
                       src={empty}
                     />
@@ -97,9 +97,9 @@ export default function RegisterScreen3() {
                 <div className="">
                   <div className="pl-5 pb-5 pr-5">
                     <Image
-                      className=" "
-                      width={200}
-                      height={200}
+                      className="w-[220px] h-[320px] "
+                     width={220}
+                      height={320}
                       alt="/"
                       src={empty}
                     />
@@ -111,7 +111,7 @@ export default function RegisterScreen3() {
               <div className="bg-[#fff] p-5 rounded-md">
               <div className="inline-block relative bg-custom-grey rounded-full mt-10 w-[260px] sm:w-[310px] py-3  focus:border-none focus:outline-none">
                   <select className="bg-transparent rounded-[50px] py- px-5 w-full  text-custom  focus:border-none focus:outline-none appearance-none">
-                    <option className="pt-1 text-sm ">Id Type</option>
+                    <option className="pt-1 text-sm ">ID Type</option>
                     <option>Option 1</option>
                     <option>Option 2</option>
                     <option>Option 3</option>
@@ -126,7 +126,7 @@ export default function RegisterScreen3() {
                     </svg>
                   </div>
                 </div>
-                <div className="p-3 shadow-custom-box-shadow mt-4">
+                <div className="p-3 shadow-custom-box-shadow mt-4 rounded-2xl">
                   <div>
                     <input
                       type="text"
@@ -156,7 +156,7 @@ export default function RegisterScreen3() {
                     />
                   </div>
                   <p className="text-center text-md mt-5 font-semibold">
-                    Visible on ID
+                    Visible On ID
                   </p>
 
                   <div className="flex items-center w-[90%] mx-auto justify-between">

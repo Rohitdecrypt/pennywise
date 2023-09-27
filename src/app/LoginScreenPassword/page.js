@@ -22,7 +22,7 @@ const Login = () => {
             <div className="w-[345px] mx-auto">
               <div className="mb-5 mt-5 ">
                 <label
-                  className="block text-custom text-md  mb-1"
+                  className="block text-custom text-md  mb-1 pl-4 font-semibold"
                   for="username"
                 >
                   Location
@@ -53,7 +53,7 @@ const Login = () => {
             <div className="w-[345px] mx-auto">
               <div className="mb-4 mt-10">
                 <label
-                  className="block text-custom text-md mb-1"
+                  className="block text-custom text-md mb-1 pl-4 font-semibold"
                   for="username"
                 >
                   Password
@@ -62,7 +62,7 @@ const Login = () => {
                   className="bg-custom-grey rounded-[50px] 0 w-[345px] py-3 px-12 text-custom leading-tight focus:outline-none focus:shadow-outline text-md  placeholder-[#369EA4]"
                   id="username"
                   type="password"
-                  placeholder="Password"
+                 
                 />
                 <Image src={password} className="w-[42px] -mt-[37px] pl-3" />
               </div>

@@ -22,7 +22,7 @@ export default function Newsearchbar() {
                 <div className=' relative '>
                     <input
                         type="email"
-                        className=" border-[#369EA4] border-[2px] rounded-full placeholder-[#369EA4] pl-[38px] ps-4 py-2 flex-1 w-[642px]"
+                        className=" border-[#369EA4] border-[2px] rounded-full placeholder-[#369EA4] pl-[38px] py-2 flex-1 w-[642px]"
                         id="exampleFormControlInput1"
                         placeholder="Search Stock No."
                     />

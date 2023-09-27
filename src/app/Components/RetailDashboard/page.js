@@ -115,7 +115,7 @@ const Retailboard = () => {
                       style={{ display: IsOpen ? "block" : "none" }}
                       className="text-[14px] font-normal"
                     >
-                      Todays Sale
+                      Today's Sales
                     </Link>
                   </div>
                   <div className="flex items-center   gap-3 hover:bg-white hover:text-[#369EA4] h-[48px] px-3">
@@ -180,7 +180,7 @@ const Retailboard = () => {
                       style={{ display: IsOpen ? "block" : "none" }}
                       className="text-[14px] font-normal"
                     >
-                      Voucher and Store Credits
+                      Vouchers and Store Credits
                     </Link>
                   </div>
                   <div className="flex items-center   gap-3 hover:bg-white hover:text-[#369EA4] h-[48px] px-3">
