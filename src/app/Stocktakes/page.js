@@ -34,19 +34,7 @@ const Stocktakes = () => {
           </div>
         </div>
       </div>
-      <div className="relative">
-        <input
-          className="border border-custom-border-green rounded-full w-[40%] py-2 mt-5 px-12 text-custom leading-tight focus:outline-none focus:shadow-outline text-md placeholder-[#369EA4]"
-          id="username"
-          type="text"
-          placeholder="Search"
-        />
-        <Image
-          src={search}
-          alt="Profile Image"
-          className=" absolute w-5 bottom-2 left-4"
-        />
-      </div>
+  
       <div className="mt-10 border border-black rounded-2xl py-3 px-2 ">
         <div className="  px-10 overflow-x-auto  overflow-y-auto max-h-[700px] ">
           <table className=" min-w-full text-[#000000] overflow-x-auto  overflow-y-auto max-h-[700px]">

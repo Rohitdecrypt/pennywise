@@ -39,7 +39,7 @@ const StoreCredit = () => {
               className="border border-custom-border-green rounded-full w-[40%] py-2 mt-5 px-12 text-custom leading-tight focus:outline-none focus:shadow-outline text-md placeholder-[#369EA4]"
               id="username"
               type="text"
-              placeholder="Search"
+              placeholder="Voucher No./Credit No./Customer"
             />
             <Image
               src={search}
@@ -225,7 +225,7 @@ const StoreCredit = () => {
                     </div>
                   </div>
                 </div>
-                <div className="border w-[451px] ml-48 relative">
+                <div className=" w-[451px] ml-48 relative">
 
                 <Image src={blackman} alt="/" className="w-[30px] h-[30px] absolute right-[4px] top-[29px]"/>
                 <input type='text' className="w-[451px] h-10 border  rounded-full mt-6 border-black " />

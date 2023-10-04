@@ -102,7 +102,7 @@ const NewStockStep2 = () => {
             <div className="modal-body w-[422px] bg-[#fff]  relative  blur-none text-black">
                    
              <div className='bg-[#F53648] w-full relative min-h-[100px] flex justify-center items-center rounded-t-xl'>
-                <Image src={deleteColor} className='w-auto absolute -top-10 '/>
+                <Image src={deleteColor} className=' absolute -top-10 w-[77px] h-[77]'/>
                 <h1 className='font-bold text-[20px] text-[#FFFFFF] mt-8'>Delete Items?</h1>
              </div>
 
@@ -111,9 +111,9 @@ const NewStockStep2 = () => {
                  <p className='text-center pb-2 text-[#000000] text-[16px] font-light'>You’re about to delete the <br/>following:</p>
                  <p className='text-center pb-5 text-[#000000] text-[16px] font-bold'>You have <span className='text-[#F53648]'>4 item(s)</span> selected</p>
 
-                 <div className='flex justify-center items-center pb-4 relative'>
-                 <p className='text-center  text-[#A9A9A9] text-[16px] font-light'>Don’t ask again  </p>
-                 <input type="checkbox" className="bg-[#ffffff] border-2 border-green ml-2 absolute"  id='check' />
+                 <div className='flex justify-center items-center pb-4 '>
+                 <p className='text-center  text-[#A9A9A9] text-[16px] font-light'>Don’t ask again </p>
+                 <input type="checkbox" className="bg-[#ffffff] border-2 border-green ml-2 "  id='check' />
                  </div>
                  
                  <div className='h-[2px] w-full bg-[#F1F1F1]'></div>
